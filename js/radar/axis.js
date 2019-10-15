@@ -66,6 +66,10 @@ const drawAxis = (canvas,categories=3) => {
   let tick_values = all_ticks.map( tick => { return  {x: 0, y: y_without_ticks(tick) } } );
 
   let guides_group = canvas.querySelector(`g#axis_guides`);
+  let node;
+  while (node = guides_group.firstChild) {
+    node.parentNode.removeChild(node);
+  }
 
   for (let tick of tick_values ) {
     let path_def = degrees.map( degree => {
@@ -75,6 +79,12 @@ const drawAxis = (canvas,categories=3) => {
     d3.select(guides_group).append('path').attr('d',path_def).attr('fill','none');
   }
 
+  for (let axis_group of canvas.querySelectorAll('g.axis_group')) {
+    while (node = axis_group.firstChild) {
+      node.parentNode.removeChild(node);
+    }
+  }
+
   for (let degree of degrees.slice(1)) {
     let degree_selector = degree.toString().replace('\.','_');
     let subaxis = d3.axisRight().scale( y_without_ticks );
@@ -82,6 +92,7 @@ const drawAxis = (canvas,categories=3) => {
     if ( ! target_group) {
       target_group = canvas.ownerDocument.createElementNS('http://www.w3.org/2000/svg','g');
       target_group.setAttribute('id',`axis${degree_selector}`);
+      target_group.setAttribute('class','axis_group');
       canvas.appendChild(target_group);
     }
     target_group.setAttribute('transform',`translate(${AXIS_HEIGHT+MARGIN_TOP},${MARGIN_LEFT}) rotate(${degree},0,${AXIS_HEIGHT})`);
