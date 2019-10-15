@@ -7,7 +7,7 @@ import { rotate_point } from './axis';
 import { AXIS_HEIGHT } from './dimensions';
 
 const drawData = (canvas,seriesOrder,data) => {
-//  const canvas = element.ownerSVGElement;
+
   const { y : yScale } = canvasScale(canvas);
 
   let data_group = canvas.querySelector(`g#data`);
