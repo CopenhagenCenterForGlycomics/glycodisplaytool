@@ -1,82 +1,8 @@
 import 'pastemapper'
 
-const LIBRARIES = {
-  "SUBLIBRARY1": [
-    {
-      "id" : "CBGA1.0-HEK001",
-      "genes" : "MGAT1"
-    },
-    {
-      "id" : "CBGA1.0-HEK002",
-      "genes" : "COSMC"
-    },
-    {
-      "id" : "CBGA1.0-HEK003",
-      "genes" : "B4GALT5,B4GALT6"
-    },
-    {
-      "id" : "CBGA1.0-HEK004",
-      "genes" : "MGAT1,COSMC"
-    },
-    {
-      "id" : "CBGA1.0-HEK005",
-      "genes" : "MGAT1,B4GALT5,B4GALT6"
-    },
-    {
-      "id" : "CBGA1.0-HEK006",
-      "genes" : "MGAT1,COSMC,B4GALT5,B4GALT6"
-    },
-    {
-      "id" : "CBGA1.0-HEK007",
-      "genes" : "MGAT1,COSMC,B4GALT5,B4GALT6"
-    },
-    {
-      "id" : "CBGA1.0-HEK008",
-      "genes" : "B4GALT7"
-    }
-  ],
-  "SUBLIBRARY2" : [
-    {
-      "id" : "CBGA1.0-HEK058",
-      "genes" : "A4GALT"
-    },
-    {
-      "id" : "CBGA1.0-HEK059",
-      "genes" : "B3GNT5",
-    },
-    {
-      "id" : "CBGA1.0-HEK060",
-      "genes" : "ST3GAL5,B4GALNT1",
-    }
-  ],
-  "SUBLIBRARY3" : [
-    {
-      "id" : "CBGA1.0-HEK016",
-      "genes" : "MGAT2"
-    },
-    {
-      "id" : "CBGA1.0-HEK017",
-      "genes" : "MGAT3",
-    },
-    {
-      "id" : "CBGA1.0-HEK018",
-      "genes" : "MGAT4A",
-    },
-    {
-      "id" : "CBGA1.0-HEK019",
-      "genes" : "MGAT4B",
-    },
-    {
-      "id" : "CBGA1.0-HEK020",
-      "genes" : "MGAT4A,MGAT4B",
-    },
-    {
-      "id" : "CBGA1.0-HEK021",
-      "genes" : "MGAT5",
-    }
-  ]
-}
+import Library from './Library';
 
+import Radarchart from './radar/Radar';
 
 const mapper_columns = {
   libraryid : {
@@ -103,6 +29,8 @@ const guess_library = (experimental_data) => {
     return;
   }
   console.log(entry_ids);
+  let target_library = Library.fromIdentifiers(entry_ids);
+  console.log(target_library);
 };
 
 
