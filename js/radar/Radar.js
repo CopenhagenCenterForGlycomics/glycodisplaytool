@@ -2,6 +2,7 @@
 'use strict';
 
 import { drawAxis, updateAxis } from './axis';
+import { drawData } from './data';
 
 import canvasScale from './scale';
 
@@ -77,6 +78,7 @@ const refresh = (viewer) => {
   let categories = viewer.seriesOrder.map( series => series.id );
   updateAxis(viewer.shadowRoot.querySelector('svg'),viewer.range,viewer.data);
   drawAxis(viewer.shadowRoot.querySelector('svg'),categories.length);
+  drawData(viewer.shadowRoot.querySelector('svg'),viewer.seriesOrder,viewer.data);
 };
 
 class Radarchart extends WrapHTML {
@@ -91,7 +93,7 @@ class Radarchart extends WrapHTML {
 
   set range(values) {
     let [min,max] = values;
-    this[symbol_range] = [min,max];
+    this[symbol_range] = [0,max];
   }
 
   get range() {

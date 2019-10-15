@@ -19,7 +19,7 @@ const updateAxis = (canvas,range,data) => {
 
 };
 
-const rotate_point = (cx,cy,angle,p) => {
+export const rotate_point = (cx,cy,angle,p) => {
   let s = Math.sin((Math.PI * angle) / 180);
   let c = Math.cos((Math.PI * angle) / 180);
 
