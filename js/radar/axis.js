@@ -39,7 +39,7 @@ const rotate_point = (cx,cy,angle,p) => {
   return result;
 };
 
-const drawAxis = (canvas) => {
+const drawAxis = (canvas,categories=3) => {
 
   const { y : yRange } = canvasScale(canvas);
 
@@ -47,7 +47,13 @@ const drawAxis = (canvas) => {
 
   axis(d3.select(canvas.querySelector('g#axis')));
 
-  let degrees = [0,45,90,135,180,225,270,315];
+  let delta = parseFloat((360 / categories).toFixed(2));
+  let counter = 0;
+  let degrees = [0];
+  while (counter < categories) {
+    degrees.push( (counter+1)*delta );
+    counter += 1;
+  }
 
   let y_without_ticks = yRange.copy();
 
@@ -70,12 +76,12 @@ const drawAxis = (canvas) => {
   }
 
   for (let degree of degrees.slice(1)) {
-
+    let degree_selector = degree.toString().replace('\.','_');
     let subaxis = d3.axisRight().scale( y_without_ticks );
-    let target_group = canvas.querySelector(`g#axis${degree}`);
+    let target_group = canvas.querySelector(`g#axis${degree_selector}`);
     if ( ! target_group) {
       target_group = canvas.ownerDocument.createElementNS('http://www.w3.org/2000/svg','g');
-      target_group.setAttribute('id',`axis${degree}`);
+      target_group.setAttribute('id',`axis${degree_selector}`);
       canvas.appendChild(target_group);
     }
     target_group.setAttribute('transform',`translate(${AXIS_HEIGHT+MARGIN_TOP},${MARGIN_LEFT}) rotate(${degree},0,${AXIS_HEIGHT})`);
