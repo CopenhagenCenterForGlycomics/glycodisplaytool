@@ -18,7 +18,7 @@
   "dependencies": {
     "pastemapper": "hirenj/pastemapper.js"
   },
-  "devDependencies" :{
+  "devDependencies": {
     "@babel/core": "^7",
     "@babel/preset-env": "",
     "babel-loader": "^8.0.5",
