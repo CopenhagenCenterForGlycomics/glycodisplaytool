@@ -6,10 +6,10 @@ const d3 = { select, axisRight };
 
 import canvasScale from './scale';
 
-const AXIS_HEIGHT = 200;
+import { MARGINS, AXIS_HEIGHT } from './dimensions';
 
-const MARGIN_LEFT = 25;
-const MARGIN_TOP = 25;
+const MARGIN_TOP = MARGINS.TOP;
+const MARGIN_LEFT = MARGINS.LEFT;
 
 const updateAxis = (canvas,range,data) => {
 

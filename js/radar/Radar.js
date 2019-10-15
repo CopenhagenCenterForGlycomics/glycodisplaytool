@@ -5,6 +5,8 @@ import { drawAxis, updateAxis } from './axis';
 
 import canvasScale from './scale';
 
+import { AXIS_HEIGHT, MARGINS, PLOT_AREA_WIDTH, PLOT_AREA_HEIGHT } from './dimensions';
+
 const symbol_range = Symbol('range');
 const symbol_data = Symbol('data');
 const symbol_zoom = Symbol('zoom');
@@ -30,7 +32,7 @@ tmpl.innerHTML = `
   }
 
   #canvas {
-    border: solid black 1px;
+
   }
 
   #axis_guides path{
@@ -47,11 +49,11 @@ tmpl.innerHTML = `
 </style>
 
 <div class="widget_contents" >
-<svg id="canvas" viewBox="0 0 450 450">
+<svg id="canvas" viewBox="0 0 ${PLOT_AREA_WIDTH} ${PLOT_AREA_HEIGHT}">
   <defs id="defs">
   </defs>
-  <g id="axis" transform="translate(225,25)"></g>
-  <g id="axis_guides" transform="translate(225,25)"></g>
+  <g id="axis" transform="translate(${MARGINS.LEFT+AXIS_HEIGHT},${MARGINS.TOP})"></g>
+  <g id="axis_guides" transform="translate(${MARGINS.LEFT+AXIS_HEIGHT},${MARGINS.TOP})"></g>
 </svg>
 </div>
 <div style="display: none">
