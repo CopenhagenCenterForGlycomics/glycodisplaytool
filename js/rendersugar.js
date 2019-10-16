@@ -1,4 +1,4 @@
-import {CondensedIupac, Sugar, Monosaccharide, SugarAwareLayoutFishEye, SVGRenderer as Renderer} from 'glycan.js';
+import {CondensedIupac, Sugar, Monosaccharide, SugarAwareLayoutFishEye as Layout, LinkageLayoutFishEye, SVGRenderer as Renderer} from 'glycan.js';
 
 const Iupac = CondensedIupac.IO;
 
@@ -36,7 +36,7 @@ const icons_elements = Promise.resolve(Renderer.SYMBOLS).then( SYMBOLS_DEF => {
 })
 
 const render = (sequence,removed=[]) => {
-  SugarAwareLayoutFishEye.LINKS = false;
+  Layout.LINKS = false;
   let fragment = document.createDocumentFragment();
   let canvas = document.createElement('div');
   canvas.style.opacity = 0;
@@ -48,7 +48,7 @@ const render = (sequence,removed=[]) => {
     canvas.firstChild.appendChild(defs.cloneNode(true));
   });
 
-  let renderer = new Renderer(canvas,SugarAwareLayoutFishEye);
+  let renderer = new Renderer(canvas,Layout);
   let sug = new IupacSugar();
   sug.sequence = sequence;
   renderer.addSugar(sug);
