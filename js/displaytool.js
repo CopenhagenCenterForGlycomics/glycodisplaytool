@@ -50,11 +50,15 @@ const wire_pastemapper = () => {
     }
     for (let cell of library.cells) {
       let picture = await library.getPicture(cell.cellid);
-      let img = document.createElement('img');
-      document.body.append(img);
-      img.style.height='100px';
-      img.style.border = 'solid black 1px';
-      img.src = picture;
+      let cell_image = document.querySelector(`image[cell="${cell.cellid.replace(/\./g,'_')}"]`);
+      if (cell_image) {
+        cell_image.setAttribute('href',picture);
+      }
+      // let img = document.createElement('img');
+      // document.body.append(img);
+      // img.style.height='100px';
+      // img.style.border = 'solid black 1px';
+      // img.src = picture;
     }
     document.querySelector('x-radar').seriesOrder = library.cells.map( cell => { return { id: cell.cellid } });
     let all_series = [];
