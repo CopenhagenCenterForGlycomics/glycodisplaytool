@@ -1,36 +1,101 @@
+import { cached_render as render_sugar } from './rendersugar';
+
 const LIBRARIES = {
   "SUBLIBRARY1": [
     {
       "id" : "CBGA1.0-HEK001",
-      "genes" : "MGAT1"
+      "genes" : "MGAT1",
+      "deltas" : [{
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      }]
     },
     {
       "id" : "CBGA1.0-HEK002",
-      "genes" : "COSMC"
+      "genes" : "COSMC",
+      "deltas" : [{
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      }]
     },
     {
       "id" : "CBGA1.0-HEK003",
-      "genes" : "B4GALT5,B4GALT6"
+      "genes" : "B4GALT5,B4GALT6",
+      "deltas" : [{
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      }]
     },
     {
       "id" : "CBGA1.0-HEK004",
-      "genes" : "MGAT1,COSMC"
+      "genes" : "MGAT1,COSMC",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      },
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      }
+      ]
+
     },
     {
       "id" : "CBGA1.0-HEK005",
-      "genes" : "MGAT1,B4GALT5,B4GALT6"
+      "genes" : "MGAT1,B4GALT5,B4GALT6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      },
+      {
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      }
+      ]
     },
     {
       "id" : "CBGA1.0-HEK006",
-      "genes" : "MGAT1,COSMC,B4GALT5,B4GALT6"
+      "genes" : "COSMC,B4GALT5,B4GALT6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      },
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      }
+      ]
     },
     {
       "id" : "CBGA1.0-HEK007",
-      "genes" : "MGAT1,COSMC,B4GALT5,B4GALT6"
+      "genes" : "MGAT1,COSMC,B4GALT5,B4GALT6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      },
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      },
+      {
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      }
+      ]
     },
     {
       "id" : "CBGA1.0-HEK008",
-      "genes" : "B4GALT7"
+      "genes" : "B4GALT7",
+      "deltas" : [
+      {
+        "base" : "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser",
+        "removed" : ["y3a"]
+      }
+      ]
     }
   ],
   "SUBLIBRARY2" : [
@@ -80,13 +145,30 @@ class Library {
     this.id = identifier;
     this.cells = [];
   }
-  addCell(cellid,genes) {
-    this.cells.push({cellid,genes});
+  addCell(cellid,genes,deltas) {
+    this.cells.push({cellid,genes,deltas});
+  }
+  async getPicture(cellid) {
+    let [cell] = this.cells.filter( cell => cell.cellid === cellid );
+    let canvases = await Promise.all(cell.deltas.map( delta => {
+      return render_sugar(delta.base,delta.removed);
+    }));
+    let canvas = document.createElement('canvas');
+    let ctx = canvas.getContext('2d');
+    let max_height = Math.max(...canvases.map( canvas => canvas.height ));
+    canvas.width = canvases.reduce( (sum,canvas) => sum + canvas.width, 0 );
+    canvas.height = max_height;
+    let offset = 0;
+    for (let canv of canvases) {
+      ctx.drawImage(canv,offset,max_height - canv.height);
+      offset += canv.width;
+    }
+    return canvas.toDataURL('image/png');
   }
   static fromObject(identifier,library_definition) {
     let library = new Library(identifier);
-    for (let { id, genes } of library_definition) {
-      library.addCell(id,genes.split(','));
+    for (let { id, genes, deltas } of library_definition) {
+      library.addCell(id,genes.split(','),deltas);
     }
     return library;
   }

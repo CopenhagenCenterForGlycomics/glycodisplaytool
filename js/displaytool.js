@@ -42,13 +42,20 @@ const wire_pastemapper = () => {
   let mapper = document.querySelector('x-pastemapper');
   mapper.header = true;
   mapper.template = mapper_columns;
-  mapper.addEventListener('change',() => {
+  mapper.addEventListener('change',async () => {
     let data = mapper.mappedData;
     let library = guess_library(data);
     if ( ! library ) {
       return;
     }
-    console.log(library);
+    for (let cell of library.cells) {
+      let picture = await library.getPicture(cell.cellid);
+      let img = document.createElement('img');
+      document.body.append(img);
+      img.style.height='100px';
+      img.style.border = 'solid black 1px';
+      img.src = picture;
+    }
     document.querySelector('x-radar').seriesOrder = library.cells.map( cell => { return { id: cell.cellid } });
     let all_series = [];
     for (let channel = 1; channel <= channel_count; channel++ ) {
