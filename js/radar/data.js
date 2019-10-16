@@ -22,12 +22,19 @@ const drawData = (canvas,seriesOrder,data) => {
 
 
   for (let series of data ) {
-    let path_def = identifiers.map( (identifier,idx) => {
-      let datapoint = series[identifier] || 0;
-      let {x,y} = rotate_point(0,AXIS_HEIGHT,delta*idx,{x:0,y:yScale(datapoint)});
-      return `L${x} ${y}`;
-    }).join(' ').replace(/^L/,'M').replace(/$/,' Z');
-    select(data_group).append('path').attr('d',path_def).attr('fill','none').attr('stroke','red');
+    try {
+      let path_def = identifiers.map( (identifier,idx) => {
+        let datapoint = series[identifier] || 0;
+        let {x,y} = rotate_point(0,AXIS_HEIGHT,delta*idx,{x:0,y:yScale(datapoint)});
+        if (isNaN(x)) {
+          throw new Error('Bad data');
+        }
+        return `L${x} ${y}`;
+      }).join(' ').replace(/^L/,'M').replace(/$/,' Z');
+      select(data_group).append('path').attr('d',path_def).attr('fill','none').attr('stroke','red');
+    } catch (err) {
+      console.error(err);
+    }
   }
 
 

@@ -15,6 +15,18 @@ const mapper_columns = {
   },
 };
 
+const LIBRARY_SYMBOL_TEMPLATE = document.createElement('template');
+
+LIBRARY_SYMBOL_TEMPLATE.innerHTML = `
+<svg slot="annotations">
+<symbol id="symbid" viewBox="0 0 100 100">
+  <image href="" width="100" height="75" /> 
+  <text x="50" y="75" text-anchor="middle" font-size="7"></text>
+</symbol>
+<use href="#symbid" cellid="cellid" />
+</svg>
+`;
+
 let channel_count = 1;
 
 const guess_library = (experimental_data) => {
@@ -22,7 +34,6 @@ const guess_library = (experimental_data) => {
   if (entry_ids.length < 1) {
     return;
   }
-  console.log(entry_ids);
   let target_library = Library.fromIdentifiers(entry_ids);
   return target_library;
 };
@@ -48,17 +59,26 @@ const wire_pastemapper = () => {
     if ( ! library ) {
       return;
     }
+    let master;
     for (let cell of library.cells) {
       let picture = await library.getPicture(cell.cellid);
-      let cell_image = document.querySelector(`image[cell="${cell.cellid.replace(/\./g,'_')}"]`);
-      if (cell_image) {
-        cell_image.setAttribute('href',picture);
+      let symbol = LIBRARY_SYMBOL_TEMPLATE.content.cloneNode(true);
+      let clean_cell_id = cell.cellid.replace(/\./g,'_');
+      symbol.querySelector('[href="#symbid"]').setAttribute('href',`#${clean_cell_id}`);
+      symbol.querySelector('[id="symbid"]').setAttribute('id',`${clean_cell_id}`);
+      symbol.querySelector('[cellid]').setAttribute('cellid',`${cell.cellid}`);
+      symbol.querySelector('image').setAttribute('href',picture);
+      symbol.querySelector('text').textContent = cell.genes.map( gene => `Δ${gene}`).join('/');
+      if (! master) {
+        master = symbol.firstElementChild;
+      } else {
+        for (let child of [...symbol.firstElementChild.children]) {
+          master.appendChild(child);
+        }
       }
-      // let img = document.createElement('img');
-      // document.body.append(img);
-      // img.style.height='100px';
-      // img.style.border = 'solid black 1px';
-      // img.src = picture;
+    }
+    if (master) {
+      document.querySelector('x-radar').appendChild(master);
     }
     document.querySelector('x-radar').seriesOrder = library.cells.map( cell => { return { id: cell.cellid } });
     let all_series = [];
@@ -70,7 +90,6 @@ const wire_pastemapper = () => {
       });
       all_series.push(series);
     }
-    console.log(all_series);
     document.querySelector('x-radar').data = all_series;
   });
   document.querySelector('#addchannel').addEventListener('click', add_channel);
