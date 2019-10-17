@@ -20,6 +20,8 @@ let svg_to_canvas = (svg) => {
     img.onload = function () {
       ctx.drawImage(img, 0, 0);
       window.URL.revokeObjectURL(url);
+      svgBlob = null;
+      img = null;
       resolve(canvas);
     };
   });
