@@ -1,6 +1,6 @@
 import 'pastemapper'
 
-import WebLibrary as Library from './WebLibrary';
+import { default as Library } from './WebLibrary';
 
 import Radarchart from './radar/Radar';
 

@@ -32,3 +32,5 @@ class WebLibrary extends Library {
     return canvas.toDataURL('image/png');
   }
 }
+
+export default WebLibrary
