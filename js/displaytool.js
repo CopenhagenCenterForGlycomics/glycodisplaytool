@@ -87,6 +87,9 @@ const connect_cutoffs = (series,library) => {
       cutoff_series[cell.cellid] = cutoff.value;
     });
     radar.data = series;
+    for (let a_series of series.slice(1)) {
+      console.log(library.interpret(a_series,parseFloat(document.querySelector('input#cutoff').value)));
+    }
   };
 
   update_cutoffs();
@@ -120,7 +123,9 @@ const accept_data = (data) => {
   radar.data = all_series;
 
   connect_cutoffs(all_series,library);
-
+  for (let series of all_series.slice(1)) {
+    console.log(library.interpret(series,parseFloat(document.querySelector('input#cutoff').value)));
+  }
 };
 
 const guess_library = (experimental_data) => {
