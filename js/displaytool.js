@@ -116,6 +116,8 @@ const wire_pastemapper = () => {
     cutoff.setAttribute('min',radar.range[0]);
     cutoff.setAttribute('max',radar.range[1]);
     cutoff.addEventListener('change',update_cutoffs);
+    cutoff.value = Math.floor(0.5*(radar.range[0]+radar.range[1]));
+    update_cutoffs();
   });
   document.querySelector('#addchannel').addEventListener('click', add_channel);
 };
