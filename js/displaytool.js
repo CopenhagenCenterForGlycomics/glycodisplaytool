@@ -50,7 +50,8 @@ const add_channel = () => {
 };
 
 const wire_pastemapper = () => {
-  let mapper = document.querySelector('x-pastemapper');
+  const mapper = document.querySelector('x-pastemapper');
+  const radar = document.querySelector('x-radar');
   mapper.header = true;
   mapper.template = mapper_columns;
   mapper.addEventListener('change',async () => {
@@ -78,9 +79,9 @@ const wire_pastemapper = () => {
       }
     }
     if (master) {
-      document.querySelector('x-radar').appendChild(master);
+      radar.appendChild(master);
     }
-    document.querySelector('x-radar').seriesOrder = library.cells.map( cell => { return { id: cell.cellid } });
+    radar.seriesOrder = library.cells.map( cell => { return { id: cell.cellid } });
     let all_series = [];
     for (let channel = 1; channel <= channel_count; channel++ ) {
       let series = {};
@@ -90,7 +91,31 @@ const wire_pastemapper = () => {
       });
       all_series.push(series);
     }
-    document.querySelector('x-radar').data = all_series;
+
+    const cutoff_series = {};
+
+    const cutoff = document.querySelector('input#cutoff');
+    cutoff.value = 0;
+
+    let update_cutoffs = () => {
+      if (radar.data.indexOf(cutoff_series) < 0) {
+        return;
+      }
+      library.cells.forEach( (cell) => {
+        cutoff_series[cell.cellid] = cutoff.value;
+      });
+      radar.data = all_series;
+    };
+
+    update_cutoffs();
+
+    all_series.splice(0,0,cutoff_series);
+
+    radar.data = all_series;
+
+    cutoff.setAttribute('min',radar.range[0]);
+    cutoff.setAttribute('max',radar.range[1]);
+    cutoff.addEventListener('change',update_cutoffs);
   });
   document.querySelector('#addchannel').addEventListener('click', add_channel);
 };

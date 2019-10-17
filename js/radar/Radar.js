@@ -125,7 +125,7 @@ class Radarchart extends WrapHTML {
      { 'cat1' : val3, 'cat2' : val4 }
     ]
     */
-    let vals = [].concat.apply([],data.map( series => Object.values(series) ));
+    let vals = data.map( series => Object.values(series) ).flat();
     let maxrange = Math.ceil(Math.max(...vals));
     let minrange = Math.floor(Math.min(...vals));
     this.range = [minrange,maxrange];

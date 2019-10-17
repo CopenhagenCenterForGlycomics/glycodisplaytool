@@ -21,7 +21,7 @@ const drawData = (canvas,seriesOrder,data) => {
   let delta = parseFloat((360 / identifiers.length).toFixed(2));
 
 
-  for (let series of data ) {
+  for (let [idx,series] of data.entries()) {
     try {
       let path_def = identifiers.map( (identifier,idx) => {
         let datapoint = series[identifier] || 0;
@@ -31,7 +31,7 @@ const drawData = (canvas,seriesOrder,data) => {
         }
         return `L${x} ${y}`;
       }).join(' ').replace(/^L/,'M').replace(/$/,' Z');
-      select(data_group).append('path').attr('d',path_def).attr('fill','none').attr('stroke','red');
+      select(data_group).append('path').attr('d',path_def).attr('style',`stroke: var(--stroke-series${idx},red); stroke-width: var(--stroke-width-series${idx},red); fill: var(--fill-series${idx},none);`);
     } catch (err) {
       console.error(err);
     }

@@ -8,56 +8,20 @@
 			width: 20%;
 			border: solid black 1px;
 		}
+		x-radar {
+			--stroke-width-series0: 2;
+			--stroke-series0: red;
+			--stroke-width-series1: 2;
+			--stroke-series1: blue;
+			--fill-series1: rgba(0,0,255,0.2);
+		}
 	</style>
 </head>
 <body>
 <button id="addchannel">Add Channel</button>
 <x-pastemapper id="pastemapper" style="margin: 0.5em;"></x-pastemapper>
+<label>Cutoff<input type="range" id="cutoff"/></label>
 <x-radar style="width: 75%;">
-<!-- 	<svg slot="annotations">
-		<symbol id="cbga1_0-HEK001" viewBox="0 0 100 100">
-			<image cell="CBGA1.0-HEK001" href="" width="100" height="75" /> 
-			<text  cell="CBGA1.0-HEK001" x="50" y="75" text-anchor="middle" font-size="10">CBGA1.0-HEK001</text>
-		</symbol>
-		<symbol id="cbga1_0-HEK002" viewBox="0 0 100 100">
-			<image cell="CBGA1.0-HEK002" href="" width="100" height="75" /> 
-			<text  cell="CBGA1.0-HEK002" x="50" y="75" text-anchor="middle" font-size="10">CBGA1.0-HEK002</text>
-		</symbol>
-		<symbol id="cbga1_0-HEK003" viewBox="0 0 100 100">
-			<image cell="CBGA1.0-HEK003" href="" width="100" height="75" /> 
-			<text  cell="CBGA1.0-HEK003" x="50" y="75" text-anchor="middle" font-size="10">CBGA1.0-HEK003</text>
-		</symbol>
-		<symbol id="cbga1_0-HEK004" viewBox="0 0 100 100">
-			<image cell="CBGA1.0-HEK004" href="" width="100" height="75" /> 
-			<text  cell="CBGA1.0-HEK004" x="50" y="75" text-anchor="middle" font-size="10">CBGA1.0-HEK004</text>
-		</symbol>
-		<symbol id="cbga1_0-HEK005" viewBox="0 0 100 100">
-			<image cell="CBGA1.0-HEK005" href="" width="100" height="75" /> 
-			<text  cell="CBGA1.0-HEK005" x="50" y="75" text-anchor="middle" font-size="10">CBGA1.0-HEK005</text>
-		</symbol>
-		<symbol id="cbga1_0-HEK006" viewBox="0 0 100 100">
-			<image cell="CBGA1.0-HEK006" href="" width="100" height="75" /> 
-			<text  cell="CBGA1.0-HEK006" x="50" y="75" text-anchor="middle" font-size="10">CBGA1.0-HEK006</text>
-		</symbol>
-		<symbol id="cbga1_0-HEK007" viewBox="0 0 100 100">
-			<image cell="CBGA1.0-HEK007" href="" width="100" height="75" /> 
-			<text  cell="CBGA1.0-HEK007" x="50" y="75" text-anchor="middle" font-size="10">CBGA1.0-HEK007</text>
-		</symbol>
-		<symbol id="cbga1_0-HEK008" viewBox="0 0 100 100">
-			<image cell="CBGA1.0-HEK008" href="" width="100" height="75" /> 
-			<text  cell="CBGA1.0-HEK008" x="50" y="75" text-anchor="middle" font-size="10">CBGA1.0-HEK008</text>
-		</symbol>
-
-
-		<use href="#cbga1_0-HEK001" cellid="CBGA1.0-HEK001" />
-		<use href="#cbga1_0-HEK002" cellid="CBGA1.0-HEK002" />
-		<use href="#cbga1_0-HEK003" cellid="CBGA1.0-HEK003" />
-		<use href="#cbga1_0-HEK004" cellid="CBGA1.0-HEK004" />
-		<use href="#cbga1_0-HEK005" cellid="CBGA1.0-HEK005" />
-		<use href="#cbga1_0-HEK006" cellid="CBGA1.0-HEK006" />
-		<use href="#cbga1_0-HEK007" cellid="CBGA1.0-HEK007" />
-		<use href="#cbga1_0-HEK008" cellid="CBGA1.0-HEK008" />
-	</svg> -->
 </x-radar>
 </body>
 </html>
