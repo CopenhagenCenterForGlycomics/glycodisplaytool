@@ -19,8 +19,10 @@
     "d3-axis": "^1.0.12",
     "d3-scale": "^3.1.0",
     "d3-selection": "^1.4.0",
-    "pastemapper": "github:hirenj/pastemapper.js",
-    "glycan.js": "github:hirenj/glycan.js"
+    "glycan.js": "github:hirenj/glycan.js",
+    "logic-solver": "^2.0.1",
+    "minisolvers": "github:liffiton/JSMiniSolvers",
+    "pastemapper": "github:hirenj/pastemapper.js"
   },
   "devDependencies": {
     "@babel/core": "^7",

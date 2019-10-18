@@ -40,7 +40,7 @@ const SIALIC_DATA = {
     },
     wt: 13825,
     remove: ['+ST6GAL1'],
-    requires: []
+    requires: ['ST6GAL1+ST6GAL2']
   },
   VIETNAM2004: {
     values: {
@@ -52,7 +52,7 @@ const SIALIC_DATA = {
 "CBGA1.0-HEK035":1064,
 "CBGA1.0-HEK036":1049
     },
-    wt: 989,
+    wt: 33365,
     remove: [],
     requires: ['ST3GAL3+ST3GAL4+ST3GAL6']
   },
@@ -81,8 +81,8 @@ const SIALIC_DATA = {
 "CBGA1.0-HEK036":8530
     },
     wt: 1917,
-    remove: ['ST6GAL1+ST6GAL2'],
-    requires: ['+ST6GAL1']
+    remove: ['+ST6GAL1'],
+    requires: ['ST6GAL1+ST6GAL2']
   },
   MAL: {
     values: {
@@ -96,8 +96,7 @@ const SIALIC_DATA = {
     },
     wt: 4576,
     remove: [],
-    requires: [],
-    outcompetes: ['+ST6GAL1']
+    requires: ['+ST6GAL1']
   }
 };
 

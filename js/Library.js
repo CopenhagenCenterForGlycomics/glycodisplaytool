@@ -1,3 +1,13 @@
+import Logic from 'logic-solver';
+
+const or_geneset = (genes) => {
+  let geneset = [].concat(genes);
+  while (geneset.length > 1) {
+    let statement = Logic.or(...geneset.splice(0,2));
+    geneset.splice(0,0,statement);
+  }
+  return geneset[0];
+};
 
 const LIBRARIES = {
   "SUBLIBRARY1": [
@@ -310,43 +320,38 @@ class Library {
   interpret(values,cutoff) {
     let log_values = Object.fromEntries( Object.entries(values).map( ([cellid,value]) => [cellid,Math.log2(value+1e-10)]) );
     let log_cutoff = Math.log2(cutoff+1e-10);
-    let unaffected_genes = [];
-    for (let cell of this.cells.filter( cell => cell.genes.length === 1)) {
-      let diff = log_values[cell.cellid] - log_cutoff;
-      let over_wt = diff >= 1;
-      let under_wt = diff <= -1;
-      if (! over_wt && ! under_wt) {
-        unaffected_genes.push(cell.genes[0]);
+    const LOG_DIFF = 1.5;
+    let over_solver = new Logic.Solver();
+    let under_solver = new Logic.Solver();
+    for (let cell of this.cells) {
+      if (log_values[cell.cellid] ===  Math.log2(0+1e-10)) {
+        continue;
       }
-    }
-    let gene_matrix = {};
-    for (let cell of this.cells.filter( cell => cell.genes.length > 1)) {
       let diff = log_values[cell.cellid] - log_cutoff;
-      let over_wt = diff >= 1;
-      let under_wt = diff <= -1;
-      for (let gene of cell.genes.filter( gene => unaffected_genes.indexOf(gene) < 0 )) {
-        if ( ! gene_matrix[gene]) {
-          gene_matrix[gene] = { over: true, under: true };
+      let over_wt = diff >= LOG_DIFF;
+      let under_wt = diff <= -1*LOG_DIFF;
+      let genes = cell.genes;
+      if (genes.length === 1) {
+        if (! over_wt && ! under_wt ) {
+          // console.log('Forbidding ',genes[0]);
+          over_solver.forbid(genes[0]);
+          under_solver.forbid(genes[0]);
         }
-        gene_matrix[gene].over = gene_matrix[gene].over && over_wt;
-        gene_matrix[gene].under = gene_matrix[gene].under && under_wt;
+      }
+      if (over_wt) {
+        // console.log('Over OR ',genes);
+        over_solver.require(genes.length > 1 ? or_geneset(genes) : genes[0]);
+      }
+      if (under_wt) {
+        // console.log('Under OR ',genes);
+        under_solver.require(genes.length > 1 ? or_geneset(genes) : genes[0]);        
       }
     }
-    let remove = [];
-    let requires = [];
+    let under_soln = under_solver.solve();
+    let over_soln = over_solver.solve();
+    let remove = over_soln ? over_soln.getTrueVars() : [];
+    let requires = under_soln ? under_soln.getTrueVars() : [];
     let outcompetes = [];
-    for (let [gene,matrix] of Object.entries(gene_matrix)) {
-      if (matrix.over) {
-        remove.push(gene);
-      }
-      if (matrix.under) {
-        if (gene.match(/^\+/)) {
-           outcompetes.push(gene);
-        } else {
-          requires.push(gene);
-        }
-      }
-    }
     return { remove, requires, outcompetes };
   }
   static fromObject(identifier,library_definition) {

@@ -23,6 +23,9 @@ module.exports = {
     },
     {
       test: /\.js$/,
+      exclude: [
+          /logic-solver/
+      ],
       use: {
         loader: 'babel-loader',
         options: {
