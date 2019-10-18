@@ -334,15 +334,20 @@ class Library {
     }
     let remove = [];
     let requires = [];
+    let outcompetes = [];
     for (let [gene,matrix] of Object.entries(gene_matrix)) {
       if (matrix.over) {
         remove.push(gene);
       }
-      if (matrix.under && ! gene.match(/^\+/) ) {
-        requires.push(gene);
+      if (matrix.under) {
+        if (gene.match(/^\+/)) {
+           outcompetes.push(gene);
+        } else {
+          requires.push(gene);
+        }
       }
     }
-    return { remove, requires };
+    return { remove, requires, outcompetes };
   }
   static fromObject(identifier,library_definition) {
     let library = new Library(identifier);
