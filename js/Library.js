@@ -136,8 +136,168 @@ const LIBRARIES = {
       "id" : "CBGA1.0-HEK021",
       "genes" : "MGAT5",
     }
+  ],
+  "SUBLIBRARY4" : [
+    {
+      "id" : "CBGA1.0-HEK030",
+      "genes" : "ST6GAL1+ST6GAL2",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : []
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK031",
+      "genes" : "ST3GAL3+ST3GAL4+ST3GAL6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK032",
+      "genes" : "ST3GAL3+ST3GAL4+ST3GAL6,ST6GAL1+ST6GAL2",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK033",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL3+ST3GAL4+ST3GAL6,+ST3GAL4",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : []
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK034",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL3+ST3GAL4+ST3GAL6,+ST3GAL4",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : []
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK035",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL3+ST3GAL4+ST3GAL6,+ST6GAL1",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+
+    },
+    {
+      "id" : "CBGA1.0-HEK036",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL3+ST3GAL4+ST3GAL6,+ST6GAL1",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK037",
+      "genes" : "ST3GAL1+ST3GAL2",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK038",
+      "genes" : "ST3GAL1+ST3GAL2+ST3GAL3",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK039",
+      "genes" : "ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK040",
+      "genes" : "ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,ST6GAL1+ST6GAL2",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    }
   ]
 };
+
+
+
 
 class Library {
   constructor(identifier) {
@@ -178,7 +338,7 @@ class Library {
       if (matrix.over) {
         remove.push(gene);
       }
-      if (matrix.under) {
+      if (matrix.under && ! gene.match(/^\+/) ) {
         requires.push(gene);
       }
     }
