@@ -355,7 +355,7 @@ class Library {
     return { remove, requires, outcompetes };
   }
   static fromObject(identifier,library_definition) {
-    let library = new Library(identifier);
+    let library = new this(identifier);
     for (let { id, genes, deltas } of library_definition) {
       library.addCell(id,genes.split(','),deltas);
     }
@@ -374,7 +374,7 @@ class Library {
         max_size = intersection.size;
       }
     }
-    return Library.fromObject(target_set,LIBRARIES[target_set]);
+    return this.fromObject(target_set,LIBRARIES[target_set]);
   }
 }
 
