@@ -7,11 +7,13 @@
 	<style>
 
 		:root {
-		  --logo-background: #4e4e98;
-		  --logo-background: #FED230;
-
+			--logo-background: #4e4e98;
+			--logo-background: #FED230;
 		}
 
+		:root body {
+			margin: 0px;
+		}
 		x-pastemapper {
 			background: #eee;
 		}
@@ -24,10 +26,14 @@
 		}
 
 		.grid-container {
-		  display: grid;
-		  grid-template-columns: 1fr 1fr 1fr 1fr;
-		  grid-template-rows: 0.2fr 1fr;
-		  grid-template-areas: "inputs inputs connectivity connectivity" "savedgenes Radar Radar Radar";
+			font-size: 10pt;
+			font-family: Verdana, Helvetica, sans-serif;
+			margin-left: 8px;
+			margin-right: 8px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 0.2fr 1fr;
+			grid-template-areas: "inputs inputs connectivity connectivity" "savedgenes Radar Radar Radar";
 		}
 
 		#outputs {
@@ -35,7 +41,8 @@
 		}
 		#inputs {
 			grid-area: inputs;
-			margin: 0.5em;
+			margin-left: 0.5em;
+			margin-right: 0.5em;
 		}
 
 		#savedgenes div.savedlist {
@@ -55,6 +62,7 @@
 </section>
 <section class="grid-container">
 <div id="inputs">
+	<h2>Input binding data</h2>
 <x-pastemapper id="pastemapper"></x-pastemapper>
 <label>Baseline value<input type="range" id="cutoff"/> <x-vue id="cutoffdisp" props="cutoff">{{cutoff}}</x-vue></label>
 </div>
