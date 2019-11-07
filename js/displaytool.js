@@ -73,6 +73,10 @@ const data_to_series = (data,library) => {
   return all_series;
 };
 
+const save_gene = function() {
+  console.log(this.getAttribute('data-gene'));
+};
+
 const connect_cutoffs = (series,library) => {
   const radar = document.querySelector('x-radar');
 
@@ -81,7 +85,8 @@ const connect_cutoffs = (series,library) => {
   const cutoff = document.querySelector('input#cutoff');
   cutoff.value = 0;
 
-  let update_cutoffs = () => {
+  let update_cutoffs = async () => {
+    document.getElementById('cutoffdisp').data.cutoff = cutoff.value;
     if (radar.data.indexOf(cutoff_series) < 0) {
       return;
     }
@@ -90,7 +95,15 @@ const connect_cutoffs = (series,library) => {
     });
     radar.data = series;
     for (let a_series of series.slice(1)) {
-      console.log(library.interpret(a_series,parseFloat(document.querySelector('input#cutoff').value)));
+      let results = library.interpret(a_series,parseFloat(document.querySelector('input#cutoff').value));
+      let resultgenes = document.getElementById('resultgenes');
+      resultgenes.data.genes = [...results.remove.map( g => { return { gene: g, result: 'remove' } } ),
+                                ...results.requires.map( g => { return { gene: g, result: 'requires' } } )];
+      await resultgenes.update;
+      for (let button of resultgenes.querySelectorAll('button')) {
+        button.removeEventListener('click',save_gene);
+        button.addEventListener('click',save_gene);
+      }
     }
   };
 

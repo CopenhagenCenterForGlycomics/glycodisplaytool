@@ -8,6 +8,10 @@ const tmpl = document.createElement('template');
 tmpl.innerHTML = `
 <style>
   :host {
+    display: contents;
+  }
+  :host > div#output {
+    display: contents;
   }
 
   @media only screen
@@ -17,10 +21,11 @@ tmpl.innerHTML = `
 
   }
 </style>
-
-<div id="parent">
-<h1>Foo</h1>
+<div style="display: none;">
 <slot></slot>
+</div>
+<slot name="output"></slot>
+<div id="output">
 </div>
 `;
 
@@ -42,6 +47,12 @@ class VueComponentElement extends WrapHTML {
     return this.component.$data;
   }
 
+  get update() {
+    return new Promise( resolve => {
+      this.component.$nextTick(resolve);
+    });
+  }
+
   connectedCallback() {
     if (window.ShadyCSS) {
       ShadyCSS.styleElement(this);
@@ -49,13 +60,43 @@ class VueComponentElement extends WrapHTML {
     let shadowRoot = this.attachShadow({mode: 'open'});
     shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
-    const parent = this.shadowRoot.querySelector('div');
+    const parent = this.shadowRoot.querySelector('div#output');
+    this.shadowRoot.querySelector('slot[name="output"]').addEventListener('slotchange', (ev) => {
+      if (this.output_el) {
+        return;
+      }
+
+      let new_output = ev.target.assignedNodes()[0];
+      this.output_el = new_output;
+      this.output_el.style.display = 'contents';
+
+      this.shadowRoot.querySelector('div#output').innerHTML = '';
+
+      new_output.innerHTML = this.template_text;
+
+      let default_data = {};
+      for (let key of (this.getAttribute('props') || '').split(' ')) {
+        default_data[key] = null;
+      }
+      this.component = new Vue({
+          el: new_output,
+          data: default_data,
+          components: {
+          },
+      });
+    });
     const slot = this.shadowRoot.querySelector('slot');
     slot.addEventListener('slotchange', (ev) => {
       if ( this.component ) {
         return;
       }
-      parent.innerHTML = ev.target.assignedNodes().map( el => el.outerHTML ).join('\n');
+      let style_elements = ev.target.assignedNodes().filter( el => el instanceof HTMLStyleElement );
+      let other_elements = ev.target.assignedNodes().filter( el => style_elements.indexOf(el) < 0 );
+      this.template_text = other_elements.map( el => el instanceof HTMLElement ? el.outerHTML : el.textContent ).join('\n');
+      parent.innerHTML = this.template_text;
+      for (let style of style_elements) {
+        this.shadowRoot.appendChild(style);
+      }
       let default_data = {};
       for (let key of (this.getAttribute('props') || '').split(' ')) {
         default_data[key] = null;

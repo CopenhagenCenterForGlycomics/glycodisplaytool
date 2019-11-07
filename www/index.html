@@ -15,20 +15,23 @@
 			--stroke-series1: blue;
 			--fill-series1: rgba(0,0,255,0.2);
 		}
+		.blah {
+			background: red;
+		}
 	</style>
 </head>
 <body>
 <button id="addchannel">Add Channel</button>
 <x-pastemapper id="pastemapper" style="margin: 0.5em;"></x-pastemapper>
-<label>Baseline value<input type="range" id="cutoff"/></label>
-<x-radar style="width: 75%;">
-</x-radar>
-<x-vue id="wantedgene" props="gene items">
-	<h1>This is a component</h1>
-	<span>{{gene}}</span>
-	<div v-for="item in items" :key="item.id">
-		{{item.id}}
+<label>Baseline value<input type="range" id="cutoff"/> <x-vue id="cutoffdisp" props="cutoff">{{cutoff}}</x-vue></label>
+<x-vue id="resultgenes" props="genes">
+	<div slot="output"></div>
+	<h2>{{genes ? genes.length : 0}} genes required for binding</h2>
+	<div v-for="gene in genes" :key="gene.gene">
+		{{gene.result}}{{gene.gene}}<button class="save" :data-gene="gene.gene">Save</button>
 	</div>
 </x-vue>
+<x-radar style="width: 75%;">
+</x-radar>
 </body>
 </html>
