@@ -3,7 +3,15 @@
 <head>
 	<title>GlycoDisplayTool</title>
 	<script src="/displaytool-bundle.js"></script>
+	<link href="pageheader.css" rel="stylesheet"></link>
 	<style>
+
+		:root {
+		  --logo-background: #4e4e98;
+		  --logo-background: #FED230;
+
+		}
+
 		x-pastemapper {
 			background: #eee;
 		}
@@ -40,9 +48,13 @@
 
 	</style>
 </head>
-<body class="grid-container">
+<body>
+<section class="logo">
+  <h1>GlycoDisplayTool</h1>
+  <a class="center" href="https://glycomics.ku.dk"></a>
+</section>
+<section class="grid-container">
 <div id="inputs">
-<button id="addchannel">Add Channel</button>
 <x-pastemapper id="pastemapper"></x-pastemapper>
 <label>Baseline value<input type="range" id="cutoff"/> <x-vue id="cutoffdisp" props="cutoff">{{cutoff}}</x-vue></label>
 </div>
@@ -69,5 +81,6 @@
 		<div :data-savedgenes="(genes || []).join(' ')">{{ (genes || []).join(' ') }}</div>
 	</div>
 </x-vue>
+</section>
 </body>
 </html>
