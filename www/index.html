@@ -23,5 +23,12 @@
 <label>Baseline value<input type="range" id="cutoff"/></label>
 <x-radar style="width: 75%;">
 </x-radar>
+<x-vue id="wantedgene" props="gene items">
+	<h1>This is a component</h1>
+	<span>{{gene}}</span>
+	<div v-for="item in items" :key="item.id">
+		{{item.id}}
+	</div>
+</x-vue>
 </body>
 </html>

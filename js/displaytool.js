@@ -4,6 +4,8 @@ import { default as Library } from './WebLibrary';
 
 import Radarchart from './radar/Radar';
 
+import VueComponentElement from './vue-component';
+
 const mapper_columns = {
   libraryid : {
     type: 'string',

@@ -1,4 +1,5 @@
 const path = require('path');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
   entry: {
@@ -15,8 +16,18 @@ module.exports = {
     compress: true,
     port: 8080
   },
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js'
+    },
+  },
   module: {
     rules: [
+    {
+      test: /\.vue$/,
+      loader: 'vue-loader',
+      options: { cacheBusting: true }
+    },
     {
       test: /sugars\.svg$/,
       use: 'raw-loader'
@@ -50,4 +61,7 @@ module.exports = {
       },
     }],
   },
+  plugins: [
+    new VueLoaderPlugin()
+  ],
 };
