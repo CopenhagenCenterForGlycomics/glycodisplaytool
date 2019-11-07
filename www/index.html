@@ -5,8 +5,7 @@
 	<script src="/displaytool-bundle.js"></script>
 	<style>
 		x-pastemapper {
-			width: 40%;
-			border: solid black 1px;
+			background: #eee;
 		}
 		x-radar {
 			--stroke-width-series0: 2;
@@ -15,23 +14,60 @@
 			--stroke-series1: blue;
 			--fill-series1: rgba(0,0,255,0.2);
 		}
-		.blah {
-			background: red;
+
+		.grid-container {
+		  display: grid;
+		  grid-template-columns: 1fr 1fr 1fr 1fr;
+		  grid-template-rows: 0.2fr 1fr;
+		  grid-template-areas: "inputs inputs connectivity connectivity" "savedgenes Radar Radar Radar";
 		}
+
+		#outputs {
+			grid-area: Radar;
+		}
+		#inputs {
+			grid-area: inputs;
+			margin: 0.5em;
+		}
+
+		#savedgenes div.savedlist {
+			grid-area: savedgenes;
+		}
+
+		#savedgenes div.connectivity {
+			grid-area: connectivity;
+		}
+
 	</style>
 </head>
-<body>
+<body class="grid-container">
+<div id="inputs">
 <button id="addchannel">Add Channel</button>
-<x-pastemapper id="pastemapper" style="margin: 0.5em;"></x-pastemapper>
+<x-pastemapper id="pastemapper"></x-pastemapper>
 <label>Baseline value<input type="range" id="cutoff"/> <x-vue id="cutoffdisp" props="cutoff">{{cutoff}}</x-vue></label>
-<x-vue id="resultgenes" props="genes">
+</div>
+<div id="outputs">
+	<x-vue id="resultgenes" props="genes">
+		<div slot="output"></div>
+		<h2>{{genes ? genes.length : 0}} genes required for binding</h2>
+		<div v-for="gene in genes" :key="gene.gene">
+			{{gene.result}} {{gene.gene}} <button class="save" :data-gene="gene.gene">Save</button>
+		</div>
+	</x-vue>
+	<x-radar></x-radar>
+</div>
+<x-vue id="savedgenes" props="genes">
 	<div slot="output"></div>
-	<h2>{{genes ? genes.length : 0}} genes required for binding</h2>
-	<div v-for="gene in genes" :key="gene.gene">
-		{{gene.result}}{{gene.gene}}<button class="save" :data-gene="gene.gene">Save</button>
+	<div class="savedlist">
+	<h2>Saved genes</h2>
+	<div v-for="gene in genes" :key="gene">
+		{{gene}}<button @click="genes.splice(genes.indexOf(gene),1)">Remove</button>
+	</div>
+	</div>
+	<div class="connectivity">
+		<h2>Epitope heatmap</h2>
+		<div :data-savedgenes="(genes || []).join(' ')">{{ (genes || []).join(' ') }}</div>
 	</div>
 </x-vue>
-<x-radar style="width: 75%;">
-</x-radar>
 </body>
 </html>

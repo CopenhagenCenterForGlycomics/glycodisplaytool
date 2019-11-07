@@ -6,6 +6,9 @@ import Radarchart from './radar/Radar';
 
 import VueComponentElement from './vue-component';
 
+const $ = (selector) => document.querySelector(selector);
+const $all = (selector) => document.querySelectorAll(selector);
+
 const mapper_columns = {
   libraryid : {
     type: 'string',
@@ -74,19 +77,26 @@ const data_to_series = (data,library) => {
 };
 
 const save_gene = function() {
-  console.log(this.getAttribute('data-gene'));
+  let gene = this.getAttribute('data-gene');
+  let savedgenes = $('#savedgenes');
+  if ( ! savedgenes.data.genes ) {
+    savedgenes.data.genes = [];
+  }
+  if ( savedgenes.data.genes.indexOf(gene) < 0 ) {
+    savedgenes.data.genes.push(gene);
+  }
 };
 
 const connect_cutoffs = (series,library) => {
-  const radar = document.querySelector('x-radar');
+  const radar = $('x-radar');
 
   const cutoff_series = {};
 
-  const cutoff = document.querySelector('input#cutoff');
+  const cutoff = $('input#cutoff');
   cutoff.value = 0;
 
   let update_cutoffs = async () => {
-    document.getElementById('cutoffdisp').data.cutoff = cutoff.value;
+    $('#cutoffdisp').data.cutoff = cutoff.value;
     if (radar.data.indexOf(cutoff_series) < 0) {
       return;
     }
@@ -95,8 +105,8 @@ const connect_cutoffs = (series,library) => {
     });
     radar.data = series;
     for (let a_series of series.slice(1)) {
-      let results = library.interpret(a_series,parseFloat(document.querySelector('input#cutoff').value));
-      let resultgenes = document.getElementById('resultgenes');
+      let results = library.interpret(a_series,parseFloat($('input#cutoff').value));
+      let resultgenes = $('#resultgenes');
       resultgenes.data.genes = [...results.remove.map( g => { return { gene: g, result: 'remove' } } ),
                                 ...results.requires.map( g => { return { gene: g, result: 'requires' } } )];
       await resultgenes.update;
@@ -122,7 +132,7 @@ const connect_cutoffs = (series,library) => {
 }
 
 const accept_data = (data) => {
-  const radar = document.querySelector('x-radar');
+  const radar = $('x-radar');
 
   let library = guess_library(data);
   if ( ! library ) {
@@ -138,9 +148,6 @@ const accept_data = (data) => {
   radar.data = all_series;
 
   connect_cutoffs(all_series,library);
-  for (let series of all_series.slice(1)) {
-    console.log(library.interpret(series,parseFloat(document.querySelector('input#cutoff').value)));
-  }
 };
 
 const guess_library = (experimental_data) => {
@@ -159,19 +166,19 @@ const add_channel = () => {
     type: 'number',
     description: `Level${channel_count} binding`
   }
-  let mapper = document.querySelector('x-pastemapper');
+  let mapper = $('x-pastemapper');
   mapper.template = mapper_columns;
 };
 
 const wire_pastemapper = () => {
-  const mapper = document.querySelector('x-pastemapper');
+  const mapper = $('x-pastemapper');
   mapper.header = true;
   mapper.template = mapper_columns;
   mapper.addEventListener('change',async () => {
     let data = mapper.mappedData;
     accept_data(data);
   });
-  document.querySelector('#addchannel').addEventListener('click', add_channel);
+  // $('#addchannel').addEventListener('click', add_channel);
 };
 
 

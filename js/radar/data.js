@@ -33,7 +33,9 @@ const drawData = (canvas,seriesOrder,data) => {
       }).join(' ').replace(/^L/,'M').replace(/$/,' Z');
       select(data_group).append('path').attr('d',path_def).attr('style',`stroke: var(--stroke-series${idx},red); stroke-width: var(--stroke-width-series${idx},red); fill: var(--fill-series${idx},none);`);
     } catch (err) {
-      console.error(err);
+      if (err.message !== 'Bad data') {
+        console.error(err);
+      }
     }
   }
 
