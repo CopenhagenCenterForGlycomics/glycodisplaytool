@@ -50,7 +50,7 @@ const CAPPING_DATA = {
     },
     wt: 7433,
     remove: [],
-    requires: ['ST6GAL1+ST6GAL2']
+    requires: ['ST6GAL1','ST6GAL2']
   },
   SIGLEC7: {
     values: {
@@ -88,7 +88,7 @@ const CAPPING_DATA = {
     },
     wt: 21646,
     remove: [],
-    requires: ['ST3GAL3+ST3GAL4+ST3GAL6']
+    requires: ['ST3GAL4','ST3GAL6']
   },
   a23lectenz: {
     values: {
@@ -107,7 +107,7 @@ const CAPPING_DATA = {
     },
     wt: 3873,
     remove: ['+ST3GAL4'],
-    requires: ['ST3GAL3+ST3GAL4+ST3GAL6']
+    requires: ['ST3GAL3','ST3GAL4','ST3GAL6']
   },
 };
 
@@ -123,10 +123,10 @@ for (let [probe,definition] of Object.entries(CAPPING_DATA)) {
     let { remove: removeres, requires: requireres, outcompetes : outcompeteres } = library.interpret(values,wt);
     console.log(removeres,requireres,outcompeteres);
     it('Suggests the correct genes to remove for activity');
-    assert.deepEqual(removeres,remove);
+    assert.deepEqual(removeres.sort(),remove.sort());
     it('Suggests the correct genes that are required for activity');
-    assert.deepEqual(requireres,requires);
+    assert.deepEqual(requireres.sort(),requires.sort());
     it('Suggests the correct genes that outcompete');
-    assert.deepEqual(outcompeteres,outcompete);
+    assert.deepEqual(outcompeteres.sort(),outcompete.sort());
   });
 }
