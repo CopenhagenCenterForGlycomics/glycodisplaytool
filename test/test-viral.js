@@ -26,7 +26,7 @@ const SIALIC_DATA = {
     },
     wt: 227977,
     remove: [],
-    requires: ['ST3GAL3+ST3GAL4+ST3GAL6']
+    requires: ['ST3GAL3','ST3GAL4','ST3GAL6']
   },
   HONGKONG1968: {
     values: {
@@ -40,7 +40,7 @@ const SIALIC_DATA = {
     },
     wt: 13825,
     remove: ['+ST6GAL1'],
-    requires: ['ST3GAL3+ST3GAL4+ST3GAL6','ST6GAL1+ST6GAL2']
+    requires: ['ST3GAL3','ST3GAL4','ST3GAL6','ST6GAL1','ST6GAL2']
   },
   VIETNAM2004: {
     values: {
@@ -54,7 +54,7 @@ const SIALIC_DATA = {
     },
     wt: 33365,
     remove: [],
-    requires: ['ST3GAL3+ST3GAL4+ST3GAL6']
+    requires: ['ST3GAL3','ST3GAL4','ST3GAL6']
   },
   TEXAS2010: {
     values: {
@@ -68,7 +68,7 @@ const SIALIC_DATA = {
     },
     wt: 6667,
     remove: ['+ST6GAL1'],
-    requires: ['ST6GAL1+ST6GAL2']
+    requires: ['ST6GAL2','ST6GAL1']
   },
   SNA: {
     values: {
@@ -82,7 +82,7 @@ const SIALIC_DATA = {
     },
     wt: 1917,
     remove: ['+ST6GAL1'],
-    requires: ['ST6GAL1+ST6GAL2']
+    requires: ['ST6GAL2','ST6GAL1']
   },
   MAL: {
     values: {
@@ -96,7 +96,7 @@ const SIALIC_DATA = {
     },
     wt: 4576,
     remove: [],
-    requires: ['+ST6GAL1']
+    requires: ['+ST6GAL1','+ST3GAL4']
   }
 };
 
@@ -111,10 +111,10 @@ for (let [probe,definition] of Object.entries(SIALIC_DATA)) {
     let library = Library.fromIdentifiers(Object.keys(values));
     let { remove: removeres, requires: requireres, outcompetes : outcompeteres } = library.interpret(values,wt);
     it('Suggests the correct genes to remove for activity');
-    assert.deepEqual(removeres,remove);
+    assert.deepEqual(removeres.sort(),remove.sort());
     it('Suggests the correct genes that are required for activity');
-    assert.deepEqual(requireres,requires);
+    assert.deepEqual(requireres.sort(),requires.sort());
     it('Suggests the correct genes that outcompete');
-    assert.deepEqual(outcompeteres,outcompete);
+    assert.deepEqual(outcompeteres.sort(),outcompete.sort());
   });
 }
