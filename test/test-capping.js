@@ -69,6 +69,9 @@ const CAPPING_DATA = {
     },
     wt: 21372,
     remove: [],
+    // The ST6GAL1 & ST6GAL2 knockin dont restore binding, resulting
+    // in undefined behaviour
+    ignore: ['TEST-CAPPING-011','TEST-CAPPING-012'],
     requires: ['ST3GAL1','ST3GAL2','ST6GAL1','ST6GAL2']
   },
   SIGLEC9: {
@@ -115,13 +118,18 @@ suite('Capping test library testing');
 
 for (let [probe,definition] of Object.entries(CAPPING_DATA)) {
   test(`Interprets results from ${probe}`, function() {
-    let { values, wt, remove, requires, outcompete } = definition;
+    let { values, wt, remove, requires, outcompete, ignore } = definition;
     if ( ! outcompete ) {
       outcompete = [];
     }
+    if ( ! ignore ) {
+      ignore = [];
+    }
     let library = Library.fromIdentifiers(Object.keys(values));
+    for (let ignored of ignore) {
+      values[ignored] = wt;
+    }
     let { remove: removeres, requires: requireres, outcompetes : outcompeteres } = library.interpret(values,wt);
-    console.log(removeres,requireres,outcompeteres);
     it('Suggests the correct genes to remove for activity');
     assert.deepEqual(removeres.sort(),remove.sort());
     it('Suggests the correct genes that are required for activity');

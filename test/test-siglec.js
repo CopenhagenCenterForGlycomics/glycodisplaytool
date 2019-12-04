@@ -12,8 +12,10 @@ function ok(expr, msg) {
   if (!expr) throw new Error(msg);
 }
 
+/*
 
-const SIGLEC_DATA = {
+  This data is possibly problematic
+
   SIGLEC4: {
     values: {
 "CBGA1.0-HEK030":33411.79,
@@ -32,6 +34,9 @@ const SIGLEC_DATA = {
     remove: [],
     requires: ["ST3GAL3 OR ST3GAL1+ST3GAL2"]
   },
+*/
+
+const SIGLEC_DATA = {
   SIGLEC7: {
     values: {
 "CBGA1.0-HEK030":9617,
@@ -79,6 +84,6 @@ for (let lectin of Object.keys(SIGLEC_DATA)) {
     let library = Library.fromIdentifiers(Object.keys(values));
     let { remove: removeres, requires: requireres } = library.interpret(values,wt);
     assert.deepEqual(removeres.sort(),remove.sort());
-    assert.deepEqual(requireres.sort(),requires.sort());    
+    assert.deepEqual(requireres.sort(),requires.sort());
   });
 }

@@ -380,6 +380,36 @@ const LIBRARIES = {
       "rescues":"TEST-CAPPING-004",
       "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,+ST6GAL2"
     }
+  ],
+  "SUBLIBRARY6" : [
+    {
+      "id" : "TEST-ELONGATION-001",
+      "genes" : "B4GALT1+B4GALT2+B4GALT3+B4GALT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-002",
+      "genes" : "B4GALT1+B4GALT2+B4GALT3+B4GALT4,B4GALNT3+B4GALNT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-003",
+      "genes" : "B4GALNT3+B4GALNT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-004",
+      "genes" : "MGAT3+MGAT4A+MGAT4B+MGAT5,B3GNT2,FUT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-005",
+      "genes" : "B4GALT1+B4GALT2+B4GALT3+B4GALT4,MGAT3+MGAT4A+MGAT4B+MGAT5,B3GNT2,FUT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-006",
+      "genes" : "B4GALT1,B4GALT2,B4GALT3,B4GALT4,MGAT3+MGAT4A+MGAT4B+MGAT5,B3GNT2,FUT4,B4GALNT3+B4GALNT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-007",
+      "genes" : "ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6",
+    }
   ]
 };
 
@@ -432,7 +462,7 @@ class Library {
             genes_to_forbid = genes;
           }
           for (let gene of genes_to_forbid) {
-            console.log('Forbidding ',gene);
+            // console.log('Forbidding ',gene);
             over_solver.forbid(gene);
             under_solver.forbid(gene);
           }
@@ -445,7 +475,7 @@ class Library {
           continue;
         }
         if (under_wt && test_results[cell.rescues].under_wt ) {
-          console.log('Forbidding rescue',genes.filter(gene => gene.indexOf('+') === 0));
+          // console.log('Forbidding rescue',genes.filter(gene => gene.indexOf('+') === 0));
           for (let gene of genes.filter(gene => gene.indexOf('+') === 0)) {
             under_solver.forbid(gene.replace('+',''));
           }
@@ -458,25 +488,28 @@ class Library {
       let genes_for_solver = flatten_genes(genes);
 
       if (over_wt) {
-        console.log('Over OR ',genes_for_solver);
+        // console.log('Over OR ',genes_for_solver);
+        if (cell.rescues) {
+          over_solver.require(or_geneset(genes_for_solver.filter( gene => gene.indexOf('+') === 0 )));
+          continue;
+        }
         over_solver.require(genes_for_solver.length > 1 ? or_geneset(genes_for_solver) : genes_for_solver[0]);
       }
       if (under_wt) {
-        console.log('Under OR ',genes_for_solver);
+        // console.log('Under OR ',genes_for_solver);
         under_solver.require(genes_for_solver.length > 1 ? or_geneset(genes_for_solver) : genes_for_solver[0]);
       }
       if ( ! over_wt && ! under_wt ) {
         if ( cell.rescues && test_results[cell.rescues].under_wt ) {
-          console.log('Rescued to WT ',genes_for_solver,'requiring',genes_for_solver.filter(gene => gene.indexOf('+') === 0));
+          // console.log('Rescued to WT ',genes_for_solver,'requiring',genes_for_solver.filter(gene => gene.indexOf('+') === 0));
           // under_solver.require(or_geneset([Logic.FALSE].concat(genes_for_solver.filter(gene => gene.indexOf('+') === 0).map( gene => gene.replace('+','')))));
         } else {
-          console.log('No effect ',genes_for_solver);
+          // console.log('No effect ',genes_for_solver);
           under_solver.require(Logic.not(and_geneset(genes_for_solver)));
-          over_solver.require(Logic.not(and_geneset(genes_for_solver)));
+          // over_solver.require(Logic.not(and_geneset(genes_for_solver)));
         }
       }
     }
-    let over_soln = over_solver.solve();
     let requires = [];
     let under_soln = null;
     while ((under_soln = under_solver.solve())) {
@@ -484,7 +517,12 @@ class Library {
       under_solver.forbid(under_soln.getFormula());
     }
 
-    let remove = over_soln ? over_soln.getTrueVars() : [];
+    let remove = [];
+    let over_soln = null;
+    while ((over_soln = over_solver.solve())) {
+      remove = remove.concat(over_soln.getTrueVars()).filter( (o,i,a) => a.indexOf(o) === i );
+      over_solver.forbid(over_soln.getFormula());
+    }
     // let requires = under_soln ? under_soln.getTrueVars() : [];
     let outcompetes = [];
     return { remove, requires, outcompetes };
