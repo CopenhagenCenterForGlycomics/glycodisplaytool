@@ -20,6 +20,7 @@
     "d3-scale": "^3.1.0",
     "d3-selection": "^1.4.0",
     "glycan.js": "github:hirenj/glycan.js",
+    "sviewer": "github:hirenj/sviewer",
     "logic-solver": "^2.0.1",
     "minisolvers": "github:liffiton/JSMiniSolvers",
     "pastemapper": "github:hirenj/pastemapper.js"

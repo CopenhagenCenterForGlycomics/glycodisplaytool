@@ -3,6 +3,7 @@ import 'pastemapper'
 import { default as Library } from './WebLibrary';
 
 import Radarchart from './radar/Radar';
+import HeatMap from './heatmap';
 
 import VueComponentElement from './vue-component';
 

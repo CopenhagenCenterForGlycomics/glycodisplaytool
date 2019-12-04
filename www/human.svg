@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 8488 1979.6" style="enable-background:new 0 0 8488 1979.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;fill-opacity:0;}
+	.st1{fill:none;stroke:#000000;stroke-width:1.000000e-02;}
+	.st2{fill:#ED1C24;stroke:#000000;stroke-width:1.000000e-02;stroke-miterlimit:1;}
+	.st3{fill:#FFD400;stroke:#000000;stroke-width:1.000000e-02;stroke-miterlimit:1;}
+	.st4{fill:#0090BC;stroke:#000000;stroke-width:1.000000e-02;stroke-miterlimit:1;}
+	.st5{fill:#FFFFFF;stroke:#000000;stroke-width:1.000000e-02;stroke-miterlimit:1;}
+	.st6{fill:#00A651;stroke:#000000;stroke-width:1.000000e-02;stroke-miterlimit:1;}
+	.st7{fill:#A54399;stroke:#000000;stroke-width:1.000000e-02;stroke-miterlimit:1;}
+	.st8{fill:#BBE5FA;stroke:#2F5FAC;stroke-width:4.000000e-02;stroke-miterlimit:1;}
+	.st9{fill:#F69EA1;stroke:#000000;stroke-width:1.000000e-02;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
+	.st10{fill:#F47920;stroke:#000000;stroke-width:1.000000e-02;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
+	.st11{fill:#51A376;}
+	.st12{fill:#76C2E4;}
+	.st13{fill:#6CB98B;}
+	.st14{fill:#FDF9D3;}
+	.st15{fill:#CECECE;}
+	.st16{fill:#ECBC95;}
+	.st17{fill:#FAD3D5;}
+	.st18{fill:#CFE3F1;}
+	.st19{fill:#E0F0F9;stroke:#CEDDE2;stroke-miterlimit:10;}
+	.st20{fill:none;stroke:#333333;}
+</style>
+<symbol  id="asn" viewBox="-0.5 -0.6 1 1.2">
+	<rect x="-0.5" y="-0.6" class="st0" width="1" height="1"/>
+	<path class="st1" d="M-0.3-0.1C-0.3,0-0.2,0-0.2,0S0,0,0-0.1s0.1-0.1,0.1-0.1l0.1,0.1"/>
+	<text transform="matrix(1 0 0 1 -0.3447 0.4473)" style="font-family:'ArialMT'; font-size:0.4px;">Asn</text>
+</symbol>
+<symbol  id="cer" viewBox="-0.5 -0.6 1 1.2">
+	<rect x="-0.5" y="-0.6" class="st0" width="1" height="1"/>
+	<path class="st1" d="M-0.3-0.1C-0.3,0-0.2,0-0.2,0S0,0,0-0.1s0.1-0.1,0.1-0.1l0.1,0.1"/>
+	<text transform="matrix(1 0 0 1 -0.3223 0.4473)" style="font-family:'ArialMT'; font-size:0.4px;">Cer</text>
+</symbol>
+<symbol  id="fuc" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<path class="st2" d="M0-0.3l0.4,0.8h-0.8L0-0.3z"/>
+</symbol>
+<symbol  id="gal" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<circle class="st3" cx="0" cy="0" r="0.4"/>
+</symbol>
+<symbol  id="galnac" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<rect x="-0.4" y="-0.4" class="st3" width="0.8" height="0.8"/>
+</symbol>
+<symbol  id="glc" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<circle class="st4" cx="0" cy="0" r="0.4"/>
+</symbol>
+<symbol  id="glca" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<polyline class="st4" points="0,-0.4 0.4,0 -0.4,0 0,-0.4 	"/>
+	<polyline class="st5" points="0,0.4 0.4,0 -0.4,0 0,0.4 	"/>
+</symbol>
+<symbol  id="glcnac" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<rect x="-0.4" y="-0.4" class="st4" width="0.8" height="0.8"/>
+</symbol>
+<symbol  id="hyl" viewBox="-0.5 -0.6 1 1.2">
+	<rect x="-0.5" y="-0.6" class="st0" width="1" height="1"/>
+	<path class="st1" d="M-0.3-0.1C-0.3,0-0.2,0-0.2,0S0,0,0-0.1s0.1-0.1,0.1-0.1l0.1,0.1"/>
+	<text transform="matrix(1 0 0 1 -0.2891 0.4473)" style="font-family:'ArialMT'; font-size:0.4px;">Hyl</text>
+</symbol>
+<symbol  id="man" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<circle class="st6" cx="0" cy="0" r="0.4"/>
+</symbol>
+<symbol  id="neuac" viewBox="-0.5 -0.5 1.1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	
+		<rect x="-0.3" y="-0.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 1.057410e-02 2.552813e-02)" class="st7" width="0.7" height="0.7"/>
+</symbol>
+<symbol  id="p" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<circle class="st8" cx="0" cy="0" r="0.3"/>
+	<text transform="matrix(1 0 0 1 -0.1543 0.1738)" style="fill:#2F5FAC; font-family:'ArialMT'; font-size:0.5px;">P</text>
+</symbol>
+<symbol  id="rbo" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<polyline class="st9" points="0.2,0.1 0.3,0.4 0,0.2 -0.3,0.4 -0.2,0.1 -0.5,-0.1 -0.1,-0.1 0,-0.4 0.1,-0.1 0.5,-0.1 0.2,0.1 	"/>
+	
+		<text transform="matrix(1 0 0 1 -0.1099 9.960938e-02)" style="fill:#FFFFFF; font-family:'Helvetica-Oblique'; font-size:0.25px;">ol</text>
+</symbol>
+<symbol  id="ser" viewBox="-0.5 -0.6 1 1.2">
+	<rect x="-0.5" y="-0.6" class="st0" width="1" height="1"/>
+	<path class="st1" d="M-0.3-0.1C-0.3,0-0.2,0-0.2,0S0,0,0-0.1s0.1-0.1,0.1-0.1l0.1,0.1"/>
+	<text transform="matrix(1 0 0 1 -0.311 0.4473)" style="font-family:'ArialMT'; font-size:0.4px;">Ser</text>
+</symbol>
+<symbol  id="xyl" viewBox="-0.5 -0.5 1 1">
+	<rect x="-0.5" y="-0.5" class="st0" width="1" height="1"/>
+	<polyline class="st10" points="0.2,0.1 0.3,0.4 0,0.2 -0.3,0.4 -0.2,0.1 -0.5,-0.1 -0.1,-0.1 0,-0.4 0.1,-0.1 0.5,-0.1 0.2,0.1 	
+		"/>
+</symbol>
+<g id="Layer_2">
+	<path class="st11" d="M2399,304.1c74.9,778.1,108.6,1100.2,122.1,1306.5c142.2-0.2,283.2,0.2,420.4,1.1
+		c-12-207.4-45.6-524.1-126.8-1368.3C2677,262.2,2537.8,282.7,2399,304.1z"/>
+	<path class="st12" d="M4392,140.6c-387-30.9-967.7,19.8-1577.3,102.9c81.2,844.2,114.8,1160.9,126.8,1368.3
+		c745.8,4.9,1381.4,24,1498.5,26.1c14.6,0.3,48.1,1.2,97.6,2.7c-4-221.1-31.6-458.5-131.7-1498.9
+		C4401.2,141.4,4396.6,141,4392,140.6z"/>
+	<path class="st13" d="M1432.1,469.9c59,612.8,92.4,942.6,110.5,1155.8c311.3-10.2,648.1-14.4,978.5-15
+		c-13.5-206.3-47.2-528.4-122.1-1306.5C2065.4,355.8,1734.3,413.7,1432.1,469.9z"/>
+	<path class="st14" d="M4405.9,141.8c100.1,1040.4,127.7,1277.8,131.7,1498.9c242.9,7.5,870.4,28.9,1531.6,51.7
+		c17-297.4,181.9-754.9,349.5-1286.1C5683.7,292.2,4908.3,182.7,4405.9,141.8z"/>
+	<path class="st15" d="M120,736.2l176,1017.7c208.8-71.8,686.4-109.8,1246.6-128.2c-18.1-213.2-51.5-543-110.5-1155.8
+		C688.6,608.1,120,736.2,120,736.2z"/>
+	<path class="st16" d="M8061.4,675.8c-139.6-24-315.1-53.9-514.7-87.3c-188.1,477.4-233.3,860.1-274.3,1145.7
+		c212.9,7.4,398.9,13.9,539.3,18.8C7806.9,1504.2,7903.7,1195.4,8061.4,675.8z"/>
+	<path class="st14" d="M8408,736.2c0,0-130.2-23.1-346.6-60.4c-157.7,519.5-254.6,828.3-249.6,1077.2c172.2,6,275.7,9.7,275.7,9.7
+		C8052,1602.1,8408,736.2,8408,736.2z"/>
+	<path class="st17" d="M6810.9,468c-157,511.8-293.6,951.4-302.6,1239.5c175.7,6.1,348.3,12.1,511.1,17.8
+		c17.9-275.4,64.5-666.1,206.4-1190C7093.2,513.5,6954,490.9,6810.9,468z"/>
+	<path class="st12" d="M7225.8,535.3c-141.9,523.9-188.5,914.6-206.4,1190c87.5,3,172.2,6,253.1,8.8
+		c41-285.5,86.2-668.2,274.3-1145.7C7445.4,571.6,7337.9,553.7,7225.8,535.3z"/>
+	<path class="st18" d="M6418.7,406.2c-167.6,531.2-332.5,988.7-349.5,1286.1c146,5,293.6,10.2,439.1,15.2
+		c9-288.2,145.6-727.8,302.6-1239.5C6682.7,447.5,6551.4,426.8,6418.7,406.2z"/>
+	<path class="st19" d="M8112.7,1783.6l-25.8-0.9c-34.6-1.2-3458.4-121.3-3647.2-124.8c-22.7-0.4-64.8-1.5-123.2-2.9
+		c-324.7-8.1-1187.2-29.5-2035.3-23.2c-477.7,3.5-880.9,15.3-1198.3,35.1c-382.7,23.8-645.3,59.5-780.4,105.9l-22.2,7.6L97.1,720.9
+		l18.6-4.2c7.7-1.7,778.5-174.8,1686.2-334c533.3-93.5,1008.8-163.9,1413.4-209.4c506.5-56.9,903-74.6,1178.4-52.6
+		c274.5,21.9,656.6,66.9,1135.7,133.7c383.1,53.4,828.7,120.8,1324.6,200.3C7698,590,8404.5,715.3,8411.5,716.5l24.4,4.3l-9.4,23
+		c-0.9,2.2-89.8,218.9-173.3,452.3c-48.9,136.8-86.4,252.5-111.3,343.8c-38,138.9-39.9,195.5-34.8,218.5L8112.7,1783.6z
+		 M2598,1590.6c738.5,0,1435.1,17.3,1719.4,24.4c58.2,1.4,100.3,2.5,122.9,2.9c181,3.3,3322.6,113.4,3624.8,124
+		c-1.3-44.3,11.2-114.3,38.1-212.6c25.2-92.3,63-209,112.3-346.8c67.9-190,139.4-368.9,164.5-430.9
+		c-131.4-23.2-776.8-136.2-1532.7-257.4c-495.6-79.5-940.9-146.8-1323.7-200.2c-478.3-66.7-859.6-111.6-1133.4-133.4
+		c-272.9-21.8-666.7-4.1-1170.6,52.5c-403.8,45.4-878.4,115.7-1410.9,209C980.2,567.4,265.8,724.3,143,751.6l168.8,976.2
+		c269-82.6,931.1-128.3,1969.1-136C2386.7,1591,2492.8,1590.6,2598,1590.6z"/>
+</g>
+<g id="Layer_1" xmlns:glycanjs="https://glycocode.com/glycanjs">
+	
+		<g pointer-events="none" glycanjs:sequence="GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y11a">
+			<line class="st20" x1="7699.8" y1="965.7" x2="7699.8" y2="1035.7"/>
+		</g>
+		<g glycanjs:location="y10a">
+			<line class="st20" x1="7699.8" y1="1035.7" x2="7699.8" y2="1105.8"/>
+		</g>
+		<g glycanjs:location="y9a">
+			<line class="st20" x1="7699.8" y1="1105.8" x2="7699.8" y2="1175.9"/>
+		</g>
+		<g glycanjs:location="y8a">
+			<line class="st20" x1="7699.8" y1="1175.9" x2="7699.8" y2="1246"/>
+		</g>
+		<g glycanjs:location="y7a">
+			<line class="st20" x1="7699.8" y1="1246" x2="7699.8" y2="1316"/>
+		</g>
+		<g glycanjs:location="y6a">
+			<line class="st20" x1="7699.8" y1="1316" x2="7699.8" y2="1386.1"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="7699.8" y1="1386.1" x2="7699.8" y2="1456.2"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="7699.8" y1="1456.2" x2="7699.8" y2="1526.3"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="7699.8" y1="1526.3" x2="7699.8" y2="1596.3"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="7699.8" y1="1596.3" x2="7699.8" y2="1666.4"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 7699.7729 1663.2615)" style="overflow:visible;"/>
+		
+			<use xlink:href="#xyl"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Xyl" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(69.3814 0 0 69.3814 7699.7729 1596.3358)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 7699.7729 1526.2606)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 7699.7729 1456.1854)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y6a" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 7699.7729 1316.035)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 7699.7729 1386.1102)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y7a" glycanjs:parent="y6a" transform="matrix(70.0752 0 0 70.0752 7699.7729 1245.9598)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y8a" glycanjs:parent="y7a" transform="matrix(70.0752 0 0 70.0752 7699.7729 1175.8846)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y9a" glycanjs:parent="y8a" transform="matrix(70.0752 0 0 70.0752 7699.7729 1105.8094)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y10a" glycanjs:parent="y9a" transform="matrix(70.0752 0 0 70.0752 7699.7729 1035.7343)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y11a" glycanjs:parent="y10a" transform="matrix(70.0752 0 0 70.0752 7699.7729 965.659)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="GlcA(b1-4)GlcNAc(a1-4)GlcA(b1-4)GlcNAc(a1-4)GlcA(b1-4)GlcNAc(a1-4)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y11a">
+			<line class="st20" x1="7502.1" y1="965" x2="7502.1" y2="1035.1"/>
+		</g>
+		<g glycanjs:location="y10a">
+			<line class="st20" x1="7502.1" y1="1035.1" x2="7502.1" y2="1105.2"/>
+		</g>
+		<g glycanjs:location="y9a">
+			<line class="st20" x1="7502.1" y1="1105.2" x2="7502.1" y2="1175.3"/>
+		</g>
+		<g glycanjs:location="y8a">
+			<line class="st20" x1="7502.1" y1="1175.3" x2="7502.1" y2="1245.3"/>
+		</g>
+		<g glycanjs:location="y7a">
+			<line class="st20" x1="7502.1" y1="1245.3" x2="7502.1" y2="1315.4"/>
+		</g>
+		<g glycanjs:location="y6a">
+			<line class="st20" x1="7502.1" y1="1315.4" x2="7502.1" y2="1385.5"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="7502.1" y1="1385.5" x2="7502.1" y2="1455.6"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="7502.1" y1="1455.6" x2="7502.1" y2="1525.6"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="7502.1" y1="1525.6" x2="7502.1" y2="1595.7"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="7502.1" y1="1595.7" x2="7502.1" y2="1665.8"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 7502.0742 1662.6248)" style="overflow:visible;"/>
+		
+			<use xlink:href="#xyl"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Xyl" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(69.3814 0 0 69.3814 7502.0742 1595.6991)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 7502.0742 1525.6239)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 7502.0742 1455.5487)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 7502.0742 1385.4735)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6a" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 7502.0742 1315.3983)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y7a" glycanjs:parent="y6a" transform="matrix(70.0752 0 0 70.0752 7502.0742 1245.3231)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y8a" glycanjs:parent="y7a" transform="matrix(70.0752 0 0 70.0752 7502.0742 1175.2479)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y9a" glycanjs:parent="y8a" transform="matrix(70.0752 0 0 70.0752 7502.0742 1105.1727)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y11a" glycanjs:parent="y10a" transform="matrix(70.0752 0 0 70.0752 7502.0742 965.0223)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y10a" glycanjs:parent="y9a" transform="matrix(70.0752 0 0 70.0752 7502.0742 1035.0975)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="7135.3" y1="1391.8" x2="7205.4" y2="1461.9"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="7205.4" y1="1461.9" x2="7205.4" y2="1532"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="7205.4" y1="1532" x2="7205.4" y2="1602.1"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 7205.3906 1598.9073)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 7205.3906 1531.9816)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 7205.3906 1461.9064)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(65.5389 0 0 65.5389 7135.3154 1391.8312)" style="overflow:visible;"/>
+	</g>
+	<g pointer-events="none" glycanjs:sequence="Gal(a1-4)Gal(b1-4)Glc(b1-?)Cer" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="1272" y1="1349.4" x2="1272" y2="1419.4"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="1272" y1="1419.4" x2="1272" y2="1489.5"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="1272" y1="1489.5" x2="1272" y2="1559.6"/>
+		</g>
+		
+			<use xlink:href="#cer"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Cer" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 1271.9828 1556.421)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Glc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 1271.9828 1489.4954)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 1271.9828 1419.4202)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 1271.9828 1349.345)" style="overflow:visible;"/>
+	</g>
+	<g pointer-events="none" glycanjs:sequence="Glc(?1-?)Gal(b1-O)Hyl" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="7959.8" y1="1498.7" x2="7959.8" y2="1568.8"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="7959.8" y1="1568.8" x2="7959.8" y2="1638.8"/>
+		</g>
+		
+			<use xlink:href="#hyl"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Hyl" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 7959.8145 1635.6742)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 7959.8145 1568.7484)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Glc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 7959.8145 1498.6732)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)[NeuAc(a2-6)Gal(b1-3)GlcNAc(b1-6)]Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y7b">
+			<line class="st20" x1="5212.1" y1="455.9" x2="5142" y2="526"/>
+		</g>
+		<g glycanjs:location="y6b">
+			<line class="st20" x1="5142" y1="526" x2="5212.1" y2="596"/>
+		</g>
+		<g glycanjs:location="y5b">
+			<line class="st20" x1="5212.1" y1="596" x2="5142" y2="666.1"/>
+		</g>
+		<g glycanjs:location="y7a">
+			<line class="st20" x1="4931.8" y1="455.9" x2="5001.9" y2="526"/>
+		</g>
+		<g glycanjs:location="y6a">
+			<line class="st20" x1="5001.9" y1="526" x2="5072" y2="596"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="5072" y1="596" x2="5142" y2="666.1"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="5142" y1="666.1" x2="5212.1" y2="736.2"/>
+		</g>
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="5212.1" y1="736.2" x2="5177.1" y2="806.3"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="5142" y1="736.2" x2="5177.1" y2="806.3"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="5177.1" y1="806.3" x2="5177.1" y2="876.3"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 5177.1113 873.1954)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 5177.1113 806.2697)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 5142.0737 736.1945)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 5212.1489 736.1945)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3b" transform="matrix(70.0752 0 0 70.0752 5142.0737 666.1193)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 5071.9985 596.0441)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y6a" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 5001.9233 525.9689)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y7a" glycanjs:parent="y6a" transform="matrix(65.5389 0 0 65.5389 4931.8481 455.8937)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y5b" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 5212.1489 596.0441)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y6b" glycanjs:parent="y5b" transform="matrix(70.0752 0 0 70.0752 5142.0737 525.9689)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y7b" glycanjs:parent="y6b" transform="matrix(65.5389 0 0 65.5389 5212.1489 455.8937)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="Gal(b1-3)[NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-3)[NeuAc(a2-6)Gal(b1-4)GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-6)]GalNAc(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y7b">
+			<line class="st20" x1="4841.4" y1="455.9" x2="4771.4" y2="526"/>
+		</g>
+		<g glycanjs:location="y6b">
+			<line class="st20" x1="4771.4" y1="526" x2="4771.4" y2="596"/>
+		</g>
+		<g glycanjs:location="y5b">
+			<line class="st20" x1="4771.4" y1="596" x2="4701.3" y2="666.1"/>
+		</g>
+		<g glycanjs:location="y7a">
+			<line class="st20" x1="4561.1" y1="455.9" x2="4631.2" y2="526"/>
+		</g>
+		<g glycanjs:location="y6a">
+			<line class="st20" x1="4631.2" y1="526" x2="4631.2" y2="596"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="4631.2" y1="596" x2="4701.3" y2="666.1"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="4701.3" y1="666.1" x2="4701.3" y2="736.2"/>
+		</g>
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="4701.3" y1="736.2" x2="4666.2" y2="806.3"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="4631.2" y1="736.2" x2="4666.2" y2="806.3"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="4666.2" y1="806.3" x2="4666.2" y2="876.3"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 4666.2085 873.1943)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 4666.2085 806.2686)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 4631.1709 736.1934)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 4701.2461 736.1934)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3b" transform="matrix(70.0752 0 0 70.0752 4701.2461 666.1182)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 4631.1709 596.043)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y6a" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 4631.1709 525.9678)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y7a" glycanjs:parent="y6a" transform="matrix(65.5389 0 0 65.5389 4561.0957 455.8926)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y5b" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 4771.3213 596.043)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y6b" glycanjs:parent="y5b" transform="matrix(70.0752 0 0 70.0752 4771.3213 525.9678)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y7b" glycanjs:parent="y6b" transform="matrix(65.5389 0 0 65.5389 4841.3965 455.8926)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="GlcNAc(b1-3)[GlcNAc(b1-6)]GalNAc(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="5631.6" y1="1419.4" x2="5561.5" y2="1489.5"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="5561.5" y1="1419.4" x2="5561.5" y2="1489.5"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="5561.5" y1="1489.5" x2="5561.5" y2="1559.6"/>
+		</g>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 5561.4946 1419.4396)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 5631.5698 1419.4396)" style="overflow:visible;"/>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 5561.4946 1556.4404)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 5561.4946 1489.5148)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)[NeuAc(a2-6)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y5b">
+			<line class="st20" x1="5743.6" y1="893.9" x2="5673.6" y2="963.9"/>
+		</g>
+		<g glycanjs:location="y4b">
+			<line class="st20" x1="5673.6" y1="963.9" x2="5743.6" y2="1034"/>
+		</g>
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="5743.6" y1="1034" x2="5673.6" y2="1104.1"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="5463.3" y1="893.9" x2="5533.4" y2="963.9"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="5533.4" y1="963.9" x2="5603.5" y2="1034"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="5603.5" y1="1034" x2="5673.6" y2="1104.1"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="5673.6" y1="1104.1" x2="5673.6" y2="1174.2"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 5673.6035 1171.0022)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 5673.6035 1104.0765)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 5603.5283 1034.0013)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 5533.4531 963.9261)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(65.5389 0 0 65.5389 5463.3779 893.851)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 5743.6782 1034.0013)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4b" glycanjs:parent="y3b" transform="matrix(70.0752 0 0 70.0752 5673.6035 963.9261)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y5b" glycanjs:parent="y4b" transform="matrix(65.5389 0 0 65.5389 5743.6782 893.851)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-3)[NeuAc(a2-6)Gal(b1-4)GlcNAc(b1-6)]GalNAc(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y5b">
+			<line class="st20" x1="6150.2" y1="893.9" x2="6080.1" y2="963.9"/>
+		</g>
+		<g glycanjs:location="y4b">
+			<line class="st20" x1="6080.1" y1="963.9" x2="6080.1" y2="1034"/>
+		</g>
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="6080.1" y1="1034" x2="6010" y2="1104.1"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="5869.9" y1="893.9" x2="5939.9" y2="963.9"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="5939.9" y1="963.9" x2="5939.9" y2="1034"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="5939.9" y1="1034" x2="6010" y2="1104.1"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="6010" y1="1104.1" x2="6010" y2="1174.2"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 6009.9873 1171.0087)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 6009.9873 1104.0829)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 5939.9121 1034.0078)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 5939.9121 963.9326)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(65.5389 0 0 65.5389 5869.8369 893.8574)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 6080.0625 1034.0078)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4b" glycanjs:parent="y3b" transform="matrix(70.0752 0 0 70.0752 6080.0625 963.9326)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y5b" glycanjs:parent="y4b" transform="matrix(65.5389 0 0 65.5389 6150.1377 893.8574)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="GlcA(b1-3)Xyl(a1-3)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="2751.7" y1="1421.4" x2="2681.6" y2="1421.4"/>
+		</g>
+		<g glycanjs:location="y12a">
+			<line class="st20" x1="2681.6" y1="720.7" x2="2681.6" y2="790.8"/>
+		</g>
+		<g glycanjs:location="y11a">
+			<line class="st20" x1="2681.6" y1="790.8" x2="2681.6" y2="860.8"/>
+		</g>
+		<g glycanjs:location="y10a">
+			<line class="st20" x1="2681.6" y1="860.8" x2="2681.6" y2="930.9"/>
+		</g>
+		<g glycanjs:location="y9a">
+			<line class="st20" x1="2681.6" y1="930.9" x2="2681.6" y2="1001"/>
+		</g>
+		<g glycanjs:location="y8a">
+			<line class="st20" x1="2681.6" y1="1001" x2="2681.6" y2="1071.1"/>
+		</g>
+		<g glycanjs:location="y7a">
+			<line class="st20" x1="2681.6" y1="1071.1" x2="2681.6" y2="1141.1"/>
+		</g>
+		<g glycanjs:location="y6a">
+			<line class="st20" x1="2681.6" y1="1141.1" x2="2681.6" y2="1211.2"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="2681.6" y1="1211.2" x2="2681.6" y2="1281.3"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="2681.6" y1="1281.3" x2="2681.6" y2="1351.4"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="2681.6" y1="1351.4" x2="2681.6" y2="1421.4"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="2681.6" y1="1421.4" x2="2681.6" y2="1491.5"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 2681.5925 1488.3481)" style="overflow:visible;"/>
+		
+			<use xlink:href="#man"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Man" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 2681.5925 1421.4224)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 2681.5925 1351.3472)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 2681.5925 1281.272)" style="overflow:visible;"/>
+		
+			<use xlink:href="#p"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="P" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 2681.5925 1211.1969)" style="overflow:visible;"/>
+		
+			<use xlink:href="#p"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="P" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 2751.6677 1421.4224)" style="overflow:visible;"/>
+		
+			<use xlink:href="#rbo"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Rbo" glycanjs:location="y6a" glycanjs:parent="y5a" transform="matrix(69.3814 0 0 69.3814 2681.5925 1141.1217)" style="overflow:visible;"/>
+		
+			<use xlink:href="#p"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="P" glycanjs:location="y7a" glycanjs:parent="y6a" transform="matrix(70.0752 0 0 70.0752 2681.5925 1071.0465)" style="overflow:visible;"/>
+		
+			<use xlink:href="#rbo"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Rbo" glycanjs:location="y8a" glycanjs:parent="y7a" transform="matrix(69.3814 0 0 69.3814 2681.5925 1000.9713)" style="overflow:visible;"/>
+		
+			<use xlink:href="#xyl"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Xyl" glycanjs:location="y9a" glycanjs:parent="y8a" transform="matrix(69.3814 0 0 69.3814 2681.5925 930.8961)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y12a" glycanjs:parent="y11a" transform="matrix(70.0752 0 0 70.0752 2681.5925 720.6705)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glca"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcA" glycanjs:location="y10a" glycanjs:parent="y9a" transform="matrix(70.0752 0 0 70.0752 2681.5925 860.8209)" style="overflow:visible;"/>
+		
+			<use xlink:href="#xyl"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Xyl" glycanjs:location="y11a" glycanjs:parent="y10a" transform="matrix(69.3814 0 0 69.3814 2681.5925 790.7457)" style="overflow:visible;"/>
+	</g>
+	<g pointer-events="none" glycanjs:sequence="GalNAc(b1-4)Gal(b1-4)Glc(b1-?)Cer" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="1069.2" y1="1349.4" x2="1069.2" y2="1419.4"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="1069.2" y1="1419.4" x2="1069.2" y2="1489.5"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="1069.2" y1="1489.5" x2="1069.2" y2="1559.6"/>
+		</g>
+		
+			<use xlink:href="#cer"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Cer" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 1069.1925 1556.4148)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Glc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 1069.1925 1489.489)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 1069.1925 1419.4138)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 1069.1925 1349.3386)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y8a">
+			<line class="st20" x1="403.5" y1="1069.1" x2="473.6" y2="1139.1"/>
+		</g>
+		<g glycanjs:location="y7a">
+			<line class="st20" x1="473.6" y1="1139.1" x2="543.6" y2="1209.2"/>
+		</g>
+		<g glycanjs:location="y6a">
+			<line class="st20" x1="543.6" y1="1209.2" x2="613.7" y2="1279.3"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="613.7" y1="1279.3" x2="683.8" y2="1349.4"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="683.8" y1="1349.4" x2="753.9" y2="1419.4"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="753.9" y1="1419.4" x2="753.9" y2="1489.5"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="753.9" y1="1489.5" x2="753.9" y2="1559.6"/>
+		</g>
+		
+			<use xlink:href="#cer"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Cer" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 753.8541 1556.4236)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Glc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 753.8541 1489.4979)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 753.8541 1419.4227)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 683.7789 1349.3475)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 613.7037 1279.2723)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6a" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 543.6285 1209.1971)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7a" glycanjs:parent="y6a" transform="matrix(70.0752 0 0 70.0752 473.5534 1139.1219)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8a" glycanjs:parent="y7a" transform="matrix(65.5389 0 0 65.5389 403.4782 1069.0468)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y8a">
+			<line class="st20" x1="734.3" y1="1069.1" x2="804.3" y2="1139.1"/>
+		</g>
+		<g glycanjs:location="y7a">
+			<line class="st20" x1="804.3" y1="1139.1" x2="804.3" y2="1209.2"/>
+		</g>
+		<g glycanjs:location="y6a">
+			<line class="st20" x1="804.3" y1="1209.2" x2="874.4" y2="1279.3"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="874.4" y1="1279.3" x2="874.4" y2="1349.4"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="874.4" y1="1349.4" x2="944.5" y2="1419.4"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="944.5" y1="1419.4" x2="944.5" y2="1489.5"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="944.5" y1="1489.5" x2="944.5" y2="1559.6"/>
+		</g>
+		
+			<use xlink:href="#cer"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Cer" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 944.4805 1556.4221)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Glc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 944.4805 1489.4965)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 944.4805 1419.4213)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 874.4053 1349.3461)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 874.4053 1279.2709)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6a" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 804.3301 1209.1957)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7a" glycanjs:parent="y6a" transform="matrix(70.0752 0 0 70.0752 804.3301 1139.1205)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8a" glycanjs:parent="y7a" transform="matrix(65.5389 0 0 65.5389 734.2549 1069.0453)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-6)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-6)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="3475.2" y1="1349.2" x2="3405.1" y2="1419.3"/>
+		</g>
+		<g glycanjs:location="y8d">
+			<line class="st20" x1="3615.3" y1="998.9" x2="3545.3" y2="1068.9"/>
+		</g>
+		<g glycanjs:location="y7d">
+			<line class="st20" x1="3545.3" y1="1068.9" x2="3615.3" y2="1139"/>
+		</g>
+		<g glycanjs:location="y6d">
+			<line class="st20" x1="3615.3" y1="1139" x2="3545.3" y2="1209.1"/>
+		</g>
+		<g glycanjs:location="y8c">
+			<line class="st20" x1="3475.2" y1="1068.9" x2="3405.1" y2="1139"/>
+		</g>
+		<g glycanjs:location="y7c">
+			<line class="st20" x1="3405.1" y1="1139" x2="3475.2" y2="1209.1"/>
+		</g>
+		<g glycanjs:location="y6c">
+			<line class="st20" x1="3475.2" y1="1209.1" x2="3545.3" y2="1209.1"/>
+		</g>
+		<g glycanjs:location="y5c">
+			<line class="st20" x1="3545.3" y1="1209.1" x2="3405.1" y2="1279.2"/>
+		</g>
+		<g glycanjs:location="y5b">
+			<line class="st20" x1="3405.1" y1="1209.1" x2="3405.1" y2="1279.2"/>
+		</g>
+		<g glycanjs:location="y8b">
+			<line class="st20" x1="3124.8" y1="998.9" x2="3194.9" y2="1068.9"/>
+		</g>
+		<g glycanjs:location="y7b">
+			<line class="st20" x1="3194.9" y1="1068.9" x2="3265" y2="1139"/>
+		</g>
+		<g glycanjs:location="y6b">
+			<line class="st20" x1="3265" y1="1139" x2="3265" y2="1209.1"/>
+		</g>
+		<g glycanjs:location="y8a">
+			<line class="st20" x1="3054.7" y1="1068.9" x2="3124.8" y2="1139"/>
+		</g>
+		<g glycanjs:location="y7a">
+			<line class="st20" x1="3124.8" y1="1139" x2="3194.9" y2="1209.1"/>
+		</g>
+		<g glycanjs:location="y6a">
+			<line class="st20" x1="3194.9" y1="1209.1" x2="3265" y2="1209.1"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="3265" y1="1209.1" x2="3405.1" y2="1279.2"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="3405.1" y1="1279.2" x2="3405.1" y2="1349.2"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="3405.1" y1="1349.2" x2="3405.1" y2="1419.3"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="3405.1" y1="1419.3" x2="3405.1" y2="1489.4"/>
+		</g>
+		
+			<use xlink:href="#asn"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Asn" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 3405.1384 1486.2112)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 3405.1384 1419.2855)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 3405.1384 1349.2103)" style="overflow:visible;"/>
+		
+			<use xlink:href="#fuc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Fuc" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(-49.3041 -49.3041 49.3041 -49.3041 3475.2136 1349.2103)" style="overflow:visible;"/>
+		
+			<use xlink:href="#man"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Man" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 3264.988 1209.0599)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8a" glycanjs:parent="y7a" transform="matrix(65.5389 0 0 65.5389 3054.7625 1068.9095)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6a" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 3194.9128 1209.0599)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7a" glycanjs:parent="y6a" transform="matrix(70.0752 0 0 70.0752 3124.8376 1138.9847)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8b" glycanjs:parent="y7b" transform="matrix(65.5389 0 0 65.5389 3124.8376 998.8344)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6b" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 3264.988 1138.9847)" style="overflow:visible;"/>
+		
+			<use xlink:href="#man"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Man" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 3405.1384 1279.1351)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6c" glycanjs:parent="y5b" transform="matrix(70.0752 0 0 70.0752 3475.2136 1209.0599)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y5b" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 3405.1384 1209.0599)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7b" glycanjs:parent="y6b" transform="matrix(70.0752 0 0 70.0752 3194.9128 1068.9095)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7c" glycanjs:parent="y6c" transform="matrix(70.0752 0 0 70.0752 3405.1384 1138.9847)" style="overflow:visible;"/>
+		
+			<use xlink:href="#man"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Man" glycanjs:location="y5c" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 3545.2888 1209.0599)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8c" glycanjs:parent="y7c" transform="matrix(65.5389 0 0 65.5389 3475.2136 1068.9095)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8d" glycanjs:parent="y7d" transform="matrix(65.5389 0 0 65.5389 3615.364 998.8344)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6d" glycanjs:parent="y5b" transform="matrix(70.0752 0 0 70.0752 3615.364 1138.9847)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7d" glycanjs:parent="y6d" transform="matrix(70.0752 0 0 70.0752 3545.2888 1068.9095)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-6)Gal(b1-4)GlcNAc(b1-2)[NeuAc(a2-6)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="4168.1" y1="1349.4" x2="4098.1" y2="1419.4"/>
+		</g>
+		<g glycanjs:location="y8d">
+			<line class="st20" x1="4378.4" y1="999" x2="4308.3" y2="1069.1"/>
+		</g>
+		<g glycanjs:location="y7d">
+			<line class="st20" x1="4308.3" y1="1069.1" x2="4308.3" y2="1139.1"/>
+		</g>
+		<g glycanjs:location="y6d">
+			<line class="st20" x1="4308.3" y1="1139.1" x2="4238.2" y2="1209.2"/>
+		</g>
+		<g glycanjs:location="y8c">
+			<line class="st20" x1="4238.2" y1="1069.1" x2="4168.1" y2="1139.1"/>
+		</g>
+		<g glycanjs:location="y7c">
+			<line class="st20" x1="4168.1" y1="1139.1" x2="4168.1" y2="1209.2"/>
+		</g>
+		<g glycanjs:location="y6c">
+			<line class="st20" x1="4168.1" y1="1209.2" x2="4238.2" y2="1209.2"/>
+		</g>
+		<g glycanjs:location="y5c">
+			<line class="st20" x1="4238.2" y1="1209.2" x2="4098.1" y2="1279.3"/>
+		</g>
+		<g glycanjs:location="y5b">
+			<line class="st20" x1="4098.1" y1="1209.2" x2="4098.1" y2="1279.3"/>
+		</g>
+		<g glycanjs:location="y8b">
+			<line class="st20" x1="3887.8" y1="999" x2="3957.9" y2="1069.1"/>
+		</g>
+		<g glycanjs:location="y7b">
+			<line class="st20" x1="3957.9" y1="1069.1" x2="3957.9" y2="1139.1"/>
+		</g>
+		<g glycanjs:location="y6b">
+			<line class="st20" x1="3957.9" y1="1139.1" x2="3957.9" y2="1209.2"/>
+		</g>
+		<g glycanjs:location="y8a">
+			<line class="st20" x1="3817.8" y1="1069.1" x2="3887.8" y2="1139.1"/>
+		</g>
+		<g glycanjs:location="y7a">
+			<line class="st20" x1="3887.8" y1="1139.1" x2="3887.8" y2="1209.2"/>
+		</g>
+		<g glycanjs:location="y6a">
+			<line class="st20" x1="3887.8" y1="1209.2" x2="3957.9" y2="1209.2"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="3957.9" y1="1209.2" x2="4098.1" y2="1279.3"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="4098.1" y1="1279.3" x2="4098.1" y2="1349.4"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="4098.1" y1="1349.4" x2="4098.1" y2="1419.4"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="4098.1" y1="1419.4" x2="4098.1" y2="1489.5"/>
+		</g>
+		
+			<use xlink:href="#asn"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Asn" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 4098.0806 1486.3582)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 4098.0806 1419.4325)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 4098.0806 1349.3573)" style="overflow:visible;"/>
+		
+			<use xlink:href="#man"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Man" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 4098.0806 1279.2821)" style="overflow:visible;"/>
+		
+			<use xlink:href="#man"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Man" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 3957.9299 1209.2069)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6a" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 3887.8547 1209.2069)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7a" glycanjs:parent="y6a" transform="matrix(70.0752 0 0 70.0752 3887.8547 1139.1317)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8a" glycanjs:parent="y7a" transform="matrix(65.5389 0 0 65.5389 3817.7795 1069.0565)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6b" glycanjs:parent="y5a" transform="matrix(70.0752 0 0 70.0752 3957.9299 1139.1317)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7b" glycanjs:parent="y6b" transform="matrix(70.0752 0 0 70.0752 3957.9299 1069.0565)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8b" glycanjs:parent="y7b" transform="matrix(65.5389 0 0 65.5389 3887.8547 998.9814)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y5b" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 4098.0806 1209.2069)" style="overflow:visible;"/>
+		
+			<use xlink:href="#man"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Man" glycanjs:location="y5c" glycanjs:parent="y4a" transform="matrix(70.0752 0 0 70.0752 4238.2305 1209.2069)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6c" glycanjs:parent="y5c" transform="matrix(70.0752 0 0 70.0752 4168.1558 1209.2069)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7c" glycanjs:parent="y6c" transform="matrix(70.0752 0 0 70.0752 4168.1558 1139.1317)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8c" glycanjs:parent="y7c" transform="matrix(65.5389 0 0 65.5389 4238.2305 1069.0565)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y6d" glycanjs:parent="y5c" transform="matrix(70.0752 0 0 70.0752 4308.3057 1139.1317)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y7d" glycanjs:parent="y6d" transform="matrix(70.0752 0 0 70.0752 4308.3057 1069.0565)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y8d" glycanjs:parent="y7d" transform="matrix(65.5389 0 0 65.5389 4378.3809 998.9814)" style="overflow:visible;"/>
+		
+			<use xlink:href="#fuc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Fuc" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(-49.3041 -49.3041 49.3041 -49.3041 4168.1558 1349.3573)" style="overflow:visible;"/>
+	</g>
+	<g pointer-events="none" glycanjs:sequence="Xyl(a1-3)Xyl(a1-3)Glc(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="6263.2" y1="1349.4" x2="6333.3" y2="1419.4"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="6333.3" y1="1419.4" x2="6403.3" y2="1489.5"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="6403.3" y1="1489.5" x2="6403.3" y2="1559.6"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 6403.3354 1556.4231)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Glc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 6403.3354 1489.4973)" style="overflow:visible;"/>
+		
+			<use xlink:href="#xyl"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Xyl" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(69.3814 0 0 69.3814 6263.1851 1349.3469)" style="overflow:visible;"/>
+		
+			<use xlink:href="#xyl"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Xyl" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(69.3814 0 0 69.3814 6333.2603 1419.4221)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-6)Gal(b1-3)GlcNAc(b1-6)]Man(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y5b">
+			<line class="st20" x1="1902.7" y1="1243.8" x2="1832.6" y2="1313.9"/>
+		</g>
+		<g glycanjs:location="y4b">
+			<line class="st20" x1="1832.6" y1="1313.9" x2="1902.7" y2="1384"/>
+		</g>
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="1902.7" y1="1384" x2="1832.6" y2="1454"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="1622.4" y1="1313.9" x2="1692.5" y2="1384"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="1692.5" y1="1384" x2="1762.6" y2="1454"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="1762.6" y1="1454" x2="1832.6" y2="1454"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="1832.6" y1="1454" x2="1832.6" y2="1524.1"/>
+		</g>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(65.5389 0 0 65.5389 1622.3832 1313.8959)" style="overflow:visible;"/>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 1832.6088 1520.9719)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 1692.4584 1383.9711)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 1762.5336 1454.0463)" style="overflow:visible;"/>
+		
+			<use xlink:href="#man"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Man" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 1832.6088 1454.0463)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 1902.684 1383.9711)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y5b" glycanjs:parent="y4b" transform="matrix(65.5389 0 0 65.5389 1902.684 1243.8207)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4b" glycanjs:parent="y3b" transform="matrix(70.0752 0 0 70.0752 1832.6088 1313.8959)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuAc(a2-6)Gal(b1-4)GlcNAc(b1-6)]Man(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y5b">
+			<line class="st20" x1="2381" y1="1249.3" x2="2310.9" y2="1319.4"/>
+		</g>
+		<g glycanjs:location="y4b">
+			<line class="st20" x1="2310.9" y1="1319.4" x2="2310.9" y2="1389.4"/>
+		</g>
+		<g glycanjs:location="y3b">
+			<line class="st20" x1="2310.9" y1="1389.4" x2="2240.8" y2="1459.5"/>
+		</g>
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="2100.7" y1="1319.4" x2="2170.8" y2="1389.4"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="2170.8" y1="1389.4" x2="2170.8" y2="1459.5"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="2170.8" y1="1459.5" x2="2240.8" y2="1459.5"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="2240.8" y1="1459.5" x2="2240.8" y2="1529.6"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 2240.8069 1526.4502)" style="overflow:visible;"/>
+		
+			<use xlink:href="#man"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Man" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 2240.8069 1459.5245)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 2170.7317 1459.5245)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 2170.7317 1389.4493)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(65.5389 0 0 65.5389 2100.6565 1319.3741)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3b" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 2310.8821 1389.4493)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4b" glycanjs:parent="y3b" transform="matrix(70.0752 0 0 70.0752 2310.8821 1319.3741)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y5b" glycanjs:parent="y4b" transform="matrix(65.5389 0 0 65.5389 2380.9573 1249.299)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Fuc(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y5a">
+			<line class="st20" x1="6651.6" y1="1314.9" x2="6721.7" y2="1385"/>
+		</g>
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="6721.7" y1="1385" x2="6721.7" y2="1455.1"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="6721.7" y1="1455.1" x2="6791.7" y2="1525.1"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="6791.7" y1="1525.1" x2="6791.7" y2="1595.2"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 6791.707 1592.054)" style="overflow:visible;"/>
+		
+			<use xlink:href="#fuc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Fuc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(69.7266 0 0 69.7266 6791.707 1525.1282)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y5a" glycanjs:parent="y4a" transform="matrix(65.5389 0 0 65.5389 6651.5566 1314.9026)" style="overflow:visible;"/>
+		
+			<use xlink:href="#glcnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GlcNAc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 6721.6318 1455.053)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(70.0752 0 0 70.0752 6721.6318 1384.9778)" style="overflow:visible;"/>
+	</g>
+	<g pointer-events="none" glycanjs:sequence="Glc(b1-3)Fuc(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="6894.3" y1="1461.3" x2="6964.4" y2="1531.4"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="6964.4" y1="1531.4" x2="6964.4" y2="1601.5"/>
+		</g>
+		
+			<use xlink:href="#glc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Glc" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 6894.2979 1461.3011)" style="overflow:visible;"/>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 6964.373 1598.302)" style="overflow:visible;"/>
+		
+			<use xlink:href="#fuc"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Fuc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(69.7266 0 0 69.7266 6964.373 1531.3763)" style="overflow:visible;"/>
+	</g>
+	
+		<g pointer-events="none" glycanjs:sequence="NeuAc(a2-3)Gal(b1-3)GalNAc(a1-O)Ser" xmlns:glycanjs="https://glycocode.com/glycanjs">
+		<g glycanjs:location="y4a">
+			<line class="st20" x1="4956.7" y1="1349.4" x2="4956.7" y2="1419.4"/>
+		</g>
+		<g glycanjs:location="y3a">
+			<line class="st20" x1="4956.7" y1="1419.4" x2="4956.7" y2="1489.5"/>
+		</g>
+		<g glycanjs:location="y2a">
+			<line class="st20" x1="4956.7" y1="1489.5" x2="4956.7" y2="1559.6"/>
+		</g>
+		
+			<use xlink:href="#ser"  width="1" height="1.2" x="-0.5" y="-0.6" glycanjs:identifier="Ser" glycanjs:location="y1a" glycanjs:parent="" transform="matrix(60.2103 0 0 60.2103 4956.6973 1556.4441)" style="overflow:visible;"/>
+		
+			<use xlink:href="#galnac"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="GalNAc" glycanjs:location="y2a" glycanjs:parent="y1a" transform="matrix(70.0752 0 0 70.0752 4956.6973 1489.5184)" style="overflow:visible;"/>
+		
+			<use xlink:href="#gal"  width="1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="Gal" glycanjs:location="y3a" glycanjs:parent="y2a" transform="matrix(70.0752 0 0 70.0752 4956.6973 1419.4432)" style="overflow:visible;"/>
+		
+			<use xlink:href="#neuac"  width="1.1" height="1" x="-0.5" y="-0.5" glycanjs:identifier="NeuAc" glycanjs:location="y4a" glycanjs:parent="y3a" transform="matrix(65.5389 0 0 65.5389 4956.6973 1349.368)" style="overflow:visible;"/>
+	</g>
+</g>
+</svg>
