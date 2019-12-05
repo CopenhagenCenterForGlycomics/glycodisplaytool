@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GlycoDisplayTool</title>
+	<title>GlycoRadar</title>
 	<script src="/displaytool-bundle.js"></script>
 	<link href="pageheader.css" rel="stylesheet"></link>
 	<style>
@@ -57,10 +57,9 @@
 </head>
 <body>
 <section class="logo bright">
-  <h1>GlycoDisplayTool</h1>
+  <h1>GlycoRadar</h1>
   <a class="center" href="https://glycomics.ku.dk"></a>
 </section>
-<x-heatmap id="heatmap" src="human.svg"></x-heatmap>
 <section class="grid-container">
 <div id="inputs">
 	<h2>Input binding data</h2>
@@ -72,7 +71,7 @@
 		<div slot="output"></div>
 		<h2>{{genes ? genes.length : 0}} genes required for binding</h2>
 		<div v-for="gene in genes" :key="gene.gene">
-			{{gene.result}} {{gene.gene}} <button class="save" :data-gene="gene.gene">Save</button>
+			Binding changes when {{gene.gene}} is {{gene.result}} <button class="save" :data-gene="gene.gene">Save</button>
 		</div>
 	</x-vue>
 	<x-radar></x-radar>
@@ -82,11 +81,12 @@
 	<div class="savedlist">
 	<h2>Saved genes</h2>
 	<div v-for="gene in genes" :key="gene">
-		{{gene}}<button @click="genes.splice(genes.indexOf(gene),1)">Remove</button>
+		{{gene}}<button @click="genes.splice(genes.indexOf(gene),1)">Clear</button>
 	</div>
 	</div>
 	<div class="connectivity">
 		<h2>Epitope heatmap</h2>
+		<heatmap :genes="genes || []"></heatmap>
 		<div :data-savedgenes="(genes || []).join(' ')">{{ (genes || []).join(' ') }}</div>
 	</div>
 </x-vue>

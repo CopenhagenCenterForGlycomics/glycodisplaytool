@@ -3,6 +3,12 @@
 
 import Vue from 'vue';
 
+import HeatMapComponent from '../components/heatmap.vue';
+
+const COMPONENTS = {
+  heatmap: HeatMapComponent
+};
+
 const tmpl = document.createElement('template');
 
 tmpl.innerHTML = `
@@ -81,8 +87,7 @@ class VueComponentElement extends WrapHTML {
       this.component = new Vue({
           el: new_output,
           data: default_data,
-          components: {
-          },
+          components: COMPONENTS,
       });
     });
     const slot = this.shadowRoot.querySelector('slot');
@@ -104,8 +109,7 @@ class VueComponentElement extends WrapHTML {
       this.component = new Vue({
           el: parent,
           data: default_data,
-          components: {
-          },
+          components: COMPONENTS,
       });
     });
   }
