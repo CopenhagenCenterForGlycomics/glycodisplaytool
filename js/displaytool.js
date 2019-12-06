@@ -90,14 +90,14 @@ const save_gene = function() {
 
 const connect_cutoffs = (series,library) => {
   const radar = $('x-radar');
-
   const cutoff_series = {};
 
   const cutoff = $('input#cutoff');
-  cutoff.value = 0;
+  $('#cutoffdisp').data.cutoff = 0;
 
-  let update_cutoffs = async () => {
-    $('#cutoffdisp').data.cutoff = cutoff.value;
+  let update_timeout;
+
+  let update_cutoffs = () => {
     if (radar.data.indexOf(cutoff_series) < 0) {
       return;
     }
@@ -106,15 +106,19 @@ const connect_cutoffs = (series,library) => {
     });
     radar.data = series;
     for (let a_series of series.slice(1)) {
-      let results = library.interpret(a_series,parseFloat($('input#cutoff').value));
-      let resultgenes = $('#resultgenes');
-      resultgenes.data.genes = [...results.remove.map( g => { return { gene: g, result: 'remove' } } ),
-                                ...results.requires.map( g => { return { gene: g, result: 'requires' } } )];
-      await resultgenes.update;
-      for (let button of resultgenes.querySelectorAll('button')) {
-        button.removeEventListener('click',save_gene);
-        button.addEventListener('click',save_gene);
-      }
+      clearTimeout(update_timeout);
+      update_timeout = setTimeout( async () => {
+        console.log('Calculating');
+        let results = library.interpret(a_series,parseFloat($('input#cutoff').value));
+        let resultgenes = $('#resultgenes');
+        resultgenes.data.genes = [...results.remove.filter( (o,i,a) => a.indexOf(o) === i ).map( g => { return { gene: g, result: 'removed' } } ),
+                                  ...results.requires.filter( (o,i,a) => a.indexOf(o) === i ).map( g => { return { gene: g, result: 'required' } } )];
+        await resultgenes.update;
+        for (let button of resultgenes.querySelectorAll('button')) {
+          button.removeEventListener('click',save_gene);
+          button.addEventListener('click',save_gene);
+        }
+      },500);
     }
   };
 
@@ -127,7 +131,8 @@ const connect_cutoffs = (series,library) => {
   cutoff.setAttribute('min',radar.range[0]);
   cutoff.setAttribute('max',radar.range[1]);
   cutoff.addEventListener('input',update_cutoffs);
-  cutoff.value = Math.floor(0.5*(radar.range[0]+radar.range[1]));
+  $('#cutoffdisp').addEventListener('change',update_cutoffs);
+  $('#cutoffdisp').data.cutoff = Math.floor(0.5*(radar.range[0]+radar.range[1]));
   update_cutoffs();
 
 }

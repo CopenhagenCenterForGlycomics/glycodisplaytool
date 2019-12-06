@@ -80,8 +80,39 @@
   		}
 		#savedgenes div.savedlist {
 			grid-area: savedgenes;
+			border: solid rgba(99,99,99,0.5) 1px;
+			border-radius: 5px;
+			box-shadow: 5px 5px 5px 0px rgba(99,99,99,0.5);
+			width: calc(100% - 5px - 20px);
+			height: calc(100% - 5px);
 		}
 
+		div.savedlist > * {
+			margin-left: 15px;
+		}
+
+		.savedgene *:nth-child(1) {
+			flex: 1 1 auto;
+			align-self: auto;
+		}
+
+		.savedgene *:nth-child(2) {
+			flex: 0 0 auto;
+			align-self: auto;
+		}
+		div.savedgene {
+			width: calc(100% - 30px);
+			display:flex;
+			flex-direction:row;
+			align-items: center;
+			justify-content: center;
+		}
+		.resultgene {
+			margin-right: 1em;
+		}
+		.resultgene span {
+			margin-right: 0.25em;
+		}
 		#savedgenes div.connectivity {
 			grid-area: connectivity;
 		}
@@ -90,22 +121,26 @@
 </head>
 <body>
 <section class="logo bright">
-  <h1>GlycoDisplay interpertation tool</h1>
+  <h1>GlycoDisplay interpretation tool</h1>
   <a class="center" href="https://glycomics.ku.dk"></a>
 </section>
 <section class="grid-container">
 <div id="inputs">
 	<h2 class="step">Input binding data</h2>
 <x-pastemapper id="pastemapper"></x-pastemapper>
-<label>Baseline value<input type="range" id="cutoff"/> <x-vue id="cutoffdisp" props="cutoff">{{cutoff}}</x-vue></label>
+ <x-vue id="cutoffdisp" props="cutoff">
+ 	<div slot="output"></div>
+<label>Baseline value<input type="range" id="cutoff" v-model="cutoff"/>
+<input v-model="cutoff"/></label>
+</x-vue>
 </div>
 <div id="outputs">
 	<x-vue id="resultgenes" props="genes">
 		<div slot="output"></div>
 		<h2 class="step">Select genes interpreted from radar chart</h2>
-		<div v-for="gene in genes" :key="gene.gene">
-			Binding changes when {{gene.gene}} is {{gene.result}} <button class="save" :data-gene="gene.gene">Save</button>
-		</div>
+		<span class="resultgene" v-for="gene in genes" :key="gene.gene">
+			<span>{{gene.gene}} {{gene.result}}</span><button class="save" :data-gene="gene.gene">Save</button>
+		</span>
 	</x-vue>
 	<x-radar></x-radar>
 </div>
@@ -113,14 +148,13 @@
 	<div slot="output"></div>
 	<div class="savedlist">
 	<h2>Saved genes</h2>
-	<div v-for="gene in genes" :key="gene">
-		{{gene}}<button @click="genes.splice(genes.indexOf(gene),1)">Clear</button>
+	<div class="savedgene" v-for="gene in genes" :key="gene">
+		<span>{{gene}}</span><button @click="genes.splice(genes.indexOf(gene),1)">Clear</button>
 	</div>
 	</div>
 	<div class="connectivity">
 		<h2>Epitope heatmap results</h2>
 		<heatmap :genes="genes || []"></heatmap>
-		<div :data-savedgenes="(genes || []).join(' ')">{{ (genes || []).join(' ') }}</div>
 	</div>
 </x-vue>
 </section>
