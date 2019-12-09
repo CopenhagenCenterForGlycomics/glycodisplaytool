@@ -186,7 +186,7 @@
 	"SUBLIBRARY2_GLYCOSPHINGOLIPID_BRANCHING":
 	[
     {
-      "id" : "CBGA1.0-LIB1-HEK016",
+      "id" : "CBGA1.0-LIB2-HEK016",
       "genes" : "A4GALT",
       "deltas" : [
       {
@@ -196,7 +196,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK017",
+      "id" : "CBGA1.0-LIB2-HEK017",
       "genes" : "B3GNT5",
       "deltas" : [
       {
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK018",
+      "id" : "CBGA1.0-LIB2-HEK018",
       "genes" : "B4GALNT1+ST3GAL5",
       "deltas" : [
       {
@@ -219,7 +219,7 @@
 	"SUBLIBRARY3_NLINKED_BRANCHING":
 	[
     {
-      "id" : "CBGA1.0-LIB1-HEK019",
+      "id" : "CBGA1.0-LIB3-HEK019",
       "genes" : "MGAT2",
       "deltas" : [
       {
@@ -229,7 +229,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK020",
+      "id" : "CBGA1.0-LIB3-HEK020",
       "genes" : "MGAT3",
       "deltas" : [
       {
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK021",
+      "id" : "CBGA1.0-LIB3-HEK021",
       "genes" : "MGAT4A",
       "deltas" : [
       {
@@ -249,7 +249,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK022",
+      "id" : "CBGA1.0-LIB3-HEK022",
       "genes" : "MGAT4B",
       "deltas" : [
       {
@@ -259,7 +259,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK023",
+      "id" : "CBGA1.0-LIB3-HEK023",
       "genes" : "MGAT4A+MGAT4B",
       "deltas" : [
       {
@@ -269,7 +269,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK024",
+      "id" : "CBGA1.0-LIB3-HEK024",
       "genes" : "MGAT5",
       "deltas" : [
       {
@@ -279,7 +279,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK025",
+      "id" : "CBGA1.0-LIB3-HEK025",
       "genes" : "MGAT4A+MGAT4B+MGAT5",
       "deltas" : [
       {
@@ -289,7 +289,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK026",
+      "id" : "CBGA1.0-LIB3-HEK026",
       "genes" : "MGAT4A+MGAT4B+MGAT5,MGAT3",
       "deltas" : [
       {
@@ -299,7 +299,7 @@
       ]
     },
     {
-      "id" : "CBGA1.0-LIB1-HEK027",
+      "id" : "CBGA1.0-LIB3-HEK027",
       "genes" : "FUT8",
       "deltas" : [
       {
