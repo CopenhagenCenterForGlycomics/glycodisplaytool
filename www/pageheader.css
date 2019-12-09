@@ -88,7 +88,7 @@ section.logo a.center + span.user {
   section.logo h1 {
     align-self: flex-start;
     margin-top: -1px;
-    margin-left: 8em;
+    margin-left: 9em;
     max-width: calc( 70% - 8em );
     text-overflow: ellipsis;
     overflow: hidden;
