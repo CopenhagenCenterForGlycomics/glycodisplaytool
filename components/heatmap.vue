@@ -7,9 +7,9 @@
 <script>
 
 const PATTERNS = {
-	'B4GALT6' : '*(u?-?)Gal(u?-?)Glc',
-	'COSMC' : 'Gal(b1-3)GalNAc',
-	'MGAT1' : 'GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc'
+	'B4GALT6' : '*(u?-?)*(u?-?)Gal(u?-?)Glc(u?-?)Cer',
+	'COSMC' : 'Gal(b1-3)GalNAc(a1-O)Ser;*(u?-?)Gal(b1-3)GalNAc(a1-O)Ser;Gal(b1-3)[*(u?-?)GlcNAc(b1-?)]GalNAc(a1-O)Ser',
+	'MGAT1' : '*(u?-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn'
 }
 
 export default {
@@ -29,7 +29,7 @@ export default {
 			if ( ! PATTERNS[gene]) {
 				continue;
 			}
-			heatmap.overlayPattern('rgba(255,0,0,0.25)',PATTERNS[gene]);
+			heatmap.overlayPatterns('rgba(255,0,0,0.25)',PATTERNS[gene].split(';'));
 		}
   	}
   }

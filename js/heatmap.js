@@ -44,13 +44,19 @@ class HeatMap extends SugarFrame {
     ctx.clearRect(0, 0, canv.width, canv.height);
   }
 
-  overlayPattern(colour='rgba(0,255,0,0.2)',pattern='*') {
-    let test_sugar = new IupacSugar();
-    test_sugar.sequence = `${pattern}(u?-?)*`;
+  overlayPatterns(colour='rgba(0,255,0,0.2)',patterns=['*(u?-?)*']) {
+    let test_sugars = patterns.map( pattern => {
+      let test_sugar = new IupacSugar();
+      test_sugar.sequence = `${pattern}`;
+      return test_sugar;
+    });
+
     let matcher = (sugar) => {
-      return sugar.match_sugar_pattern(test_sugar,Reaction.Comparator)
+      return test_sugars.map( test_sugar => sugar.match_sugar_pattern(test_sugar,Reaction.Comparator) )
+             .flat() 
              .map( match => [...match.composition()] ).flat()
              .map( res => res.original )
+             .filter( (o,i,a) => a.indexOf(o) === i )
              .filter( res => this.renderer.rendered.get(res) );
     };
     this.overlayHeatmap(colour,matcher);
