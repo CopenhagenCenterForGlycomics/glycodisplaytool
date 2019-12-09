@@ -148,7 +148,7 @@
 	<x-vue id="resultgenes" props="genes">
 		<div slot="output"></div>
 		<h2 class="step">Select genes interpreted from radar chart</h2>
-		<span class="resultgene" v-for="gene in genes" :key="gene.gene">
+		<span class="resultgene" v-for="gene in genes" :key="gene.gene+gene.result">
 			<span>{{gene.gene}} {{gene.result}}</span><button class="save" :data-gene="gene.gene">Save</button>
 		</span>
 	</x-vue>
