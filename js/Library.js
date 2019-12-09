@@ -24,7 +24,7 @@ const flatten_genes = (genes) => {
   return kos.concat(kis);
 };
 
-const LIBRARIES = {};
+const LIBRARIES = new Map();
 
 class Library {
   constructor(identifier) {
@@ -149,15 +149,21 @@ class Library {
     let inputset = new Set(identifiers);
     let target_set;
     let max_size = 0;
-    for (let libraryid of Object.keys(LIBRARIES)) {
-      let idset = new Set(LIBRARIES[libraryid].map( cell => cell.id ));
+    for (let libraryid of LIBRARIES.keys()) {
+      let idset = new Set(LIBRARIES.get(libraryid).map( cell => cell.id ));
       let intersection = new Set([...idset].filter(x => inputset.has(x)));
       if (intersection.size > max_size) {
         target_set = libraryid;
         max_size = intersection.size;
       }
     }
-    return this.fromObject(target_set,LIBRARIES[target_set]);
+    return this.fromObject(target_set,LIBRARIES.get(target_set));
+  }
+  static LoadDefinitions(definitions) {
+    LIBRARIES.clear();
+    for (let libraryid of Object.keys(definitions)) {
+      LIBRARIES.set(libraryid, definitions[libraryid]);
+    }
   }
 }
 

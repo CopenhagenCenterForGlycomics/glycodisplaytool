@@ -2,6 +2,8 @@ import 'pastemapper'
 
 import { default as Library } from './WebLibrary';
 
+Library.LoadDefinitions(require('../Libraries/cbga1.0-definition.json'));
+
 import Radarchart from './radar/Radar';
 import HeatMap from './heatmap';
 

@@ -4,6 +4,8 @@ import assert from 'assert';
 
 import fromEntries from 'object.fromentries';
 
+Library.LoadDefinitions(require('./common_library_definition.json'));
+
 if (!Object.fromEntries) {
     fromEntries.shim();
 }
