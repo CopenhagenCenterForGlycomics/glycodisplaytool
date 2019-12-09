@@ -31,6 +31,7 @@
 			margin-left: 8px;
 			margin-right: 8px;
 			display: grid;
+			height: 100vh;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 			grid-template-rows: 0.2fr 1fr;
 			grid-template-areas: "inputs inputs connectivity connectivity" "Radar Radar Radar savedgenes";
@@ -38,13 +39,20 @@
 
 		#outputs {
 			grid-area: Radar;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
 		}
 		#inputs {
 			grid-area: inputs;
+		}
+
+		#inputs, #outputs {
 			margin-left: 0.5em;
 			margin-right: 0.5em;
 		}
-
 
 		h2.step {
 			position: relative;
@@ -135,6 +143,7 @@
 </x-vue>
 </div>
 <div id="outputs">
+	<div>
 	<x-vue id="resultgenes" props="genes">
 		<div slot="output"></div>
 		<h2 class="step">Select genes interpreted from radar chart</h2>
@@ -142,6 +151,7 @@
 			<span>{{gene.gene}} {{gene.result}}</span><button class="save" :data-gene="gene.gene">Save</button>
 		</span>
 	</x-vue>
+	</div>
 	<x-radar></x-radar>
 </div>
 <x-vue id="savedgenes" props="genes">
