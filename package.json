@@ -7,7 +7,8 @@
     "test": "node_modules/mocha-webpack/bin/mocha-webpack --ui qunit --recursive test",
     "build-web": "./node_modules/.bin/webpack -d",
     "build-watch-web": "./node_modules/.bin/webpack --watch",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.dev.conf.js",
+    "deploy": "rm -rf dist && ./node_modules/.bin/webpack --config webpack.prod.conf.js && ./deploy.sh prod"
   },
   "repository": {
     "type": "git",
