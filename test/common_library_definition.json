@@ -1,0 +1,388 @@
+{
+  "SUBLIBRARY1": [
+    {
+      "id" : "CBGA1.0-HEK001",
+      "genes" : "MGAT1",
+      "deltas" : [{
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      }]
+    },
+    {
+      "id" : "CBGA1.0-HEK002",
+      "genes" : "COSMC",
+      "deltas" : [{
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      }]
+    },
+    {
+      "id" : "CBGA1.0-HEK003",
+      "genes" : "B4GALT5+B4GALT6",
+      "deltas" : [{
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      }]
+    },
+    {
+      "id" : "CBGA1.0-HEK004",
+      "genes" : "MGAT1,COSMC",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      },
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      }
+      ]
+
+    },
+    {
+      "id" : "CBGA1.0-HEK005",
+      "genes" : "MGAT1,B4GALT5+B4GALT6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      },
+      {
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK006",
+      "genes" : "COSMC,B4GALT5+B4GALT6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      },
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK007",
+      "genes" : "MGAT1,COSMC,B4GALT5+B4GALT6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      },
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      },
+      {
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK008",
+      "genes" : "B4GALT7",
+      "deltas" : [
+      {
+        "base" : "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser",
+        "removed" : ["y3a"]
+      }
+      ]
+    }
+  ],
+  "SUBLIBRARY2" : [
+    {
+      "id" : "CBGA1.0-HEK058",
+      "genes" : "A4GALT"
+    },
+    {
+      "id" : "CBGA1.0-HEK059",
+      "genes" : "B3GNT5",
+    },
+    {
+      "id" : "CBGA1.0-HEK060",
+      "genes" : "ST3GAL5,B4GALNT1",
+    }
+  ],
+  "SUBLIBRARY3" : [
+    {
+      "id" : "CBGA1.0-HEK016",
+      "genes" : "MGAT2"
+    },
+    {
+      "id" : "CBGA1.0-HEK017",
+      "genes" : "MGAT3",
+    },
+    {
+      "id" : "CBGA1.0-HEK018",
+      "genes" : "MGAT4A",
+    },
+    {
+      "id" : "CBGA1.0-HEK019",
+      "genes" : "MGAT4B",
+    },
+    {
+      "id" : "CBGA1.0-HEK020",
+      "genes" : "MGAT4A,MGAT4B",
+    },
+    {
+      "id" : "CBGA1.0-HEK021",
+      "genes" : "MGAT5",
+    }
+  ],
+  "SUBLIBRARY4" : [
+    {
+      "id" : "CBGA1.0-HEK030",
+      "genes" : "ST6GAL1+ST6GAL2",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : []
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK031",
+      "genes" : "ST3GAL3+ST3GAL4+ST3GAL6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK032",
+      "genes" : "ST3GAL3+ST3GAL4+ST3GAL6,ST6GAL1+ST6GAL2",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK033",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL3+ST3GAL4+ST3GAL6,+ST3GAL4",
+      "rescues" : "CBGA1.0-HEK032",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : []
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK034",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL3+ST3GAL4+ST3GAL6,+ST3GAL4",
+      "rescues" : "CBGA1.0-HEK032",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : []
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK035",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL3+ST3GAL4+ST3GAL6,+ST6GAL1",
+      "rescues" : "CBGA1.0-HEK032",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+
+    },
+    {
+      "id" : "CBGA1.0-HEK036",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL3+ST3GAL4+ST3GAL6,+ST6GAL1",
+      "rescues" : "CBGA1.0-HEK032",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK037",
+      "genes" : "ST3GAL1+ST3GAL2",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK038",
+      "genes" : "ST3GAL1+ST3GAL2+ST3GAL3",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK039",
+      "genes" : "ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : []
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-HEK040",
+      "genes" : "ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,ST6GAL1+ST6GAL2",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal",
+        "removed" : ["y1a"]
+      },
+      {
+        "base" : "NeuAc(a2-6)Gal",
+        "removed" : ["y1a"]
+      }
+      ]
+    }
+  ],
+  "SUBLIBRARY5" : [
+    {
+      "id" : "TEST-CAPPING-001",
+      "genes" : "ST6GAL1+ST6GAL2"
+    },
+    {
+      "id" : "TEST-CAPPING-002",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL5"
+    },
+    {
+      "id" : "TEST-CAPPING-003",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL3+ST3GAL4+ST3GAL6"
+    },
+    {
+      "id" : "TEST-CAPPING-004",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6"
+    },
+    {
+      "id" : "TEST-CAPPING-005",
+      "rescues":"TEST-CAPPING-004",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,+ST3GAL1"
+    },
+    {
+      "id" : "TEST-CAPPING-006",
+      "rescues":"TEST-CAPPING-004",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,+ST3GAL2"
+    },
+    {
+      "id" : "TEST-CAPPING-007",
+      "rescues":"TEST-CAPPING-004",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,+ST3GAL3"
+    },
+    {
+      "id" : "TEST-CAPPING-008",
+      "rescues":"TEST-CAPPING-004",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,+ST3GAL4"
+    },
+    {
+      "id" : "TEST-CAPPING-009",
+      "rescues":"TEST-CAPPING-004",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,+ST3GAL5"
+    },
+    {
+      "id" : "TEST-CAPPING-010",
+      "rescues":"TEST-CAPPING-004",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,+ST3GAL6"
+    },
+    {
+      "id" : "TEST-CAPPING-011",
+      "rescues":"TEST-CAPPING-004",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,+ST6GAL1"
+    },
+    {
+      "id" : "TEST-CAPPING-012",
+      "rescues":"TEST-CAPPING-004",
+      "genes" : "ST6GAL1+ST6GAL2,ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6,+ST6GAL2"
+    }
+  ],
+  "SUBLIBRARY6" : [
+    {
+      "id" : "TEST-ELONGATION-001",
+      "genes" : "B4GALT1+B4GALT2+B4GALT3+B4GALT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-002",
+      "genes" : "B4GALT1+B4GALT2+B4GALT3+B4GALT4,B4GALNT3+B4GALNT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-003",
+      "genes" : "B4GALNT3+B4GALNT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-004",
+      "genes" : "MGAT3+MGAT4A+MGAT4B+MGAT5,B3GNT2,FUT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-005",
+      "genes" : "B4GALT1+B4GALT2+B4GALT3+B4GALT4,MGAT3+MGAT4A+MGAT4B+MGAT5,B3GNT2,FUT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-006",
+      "genes" : "B4GALT1,B4GALT2,B4GALT3,B4GALT4,MGAT3+MGAT4A+MGAT4B+MGAT5,B3GNT2,FUT4,B4GALNT3+B4GALNT4",
+    },
+    {
+      "id" : "TEST-ELONGATION-007",
+      "genes" : "ST3GAL1+ST3GAL2+ST3GAL3+ST3GAL4+ST3GAL5+ST3GAL6",
+    }
+  ]
+}

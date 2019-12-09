@@ -1,0 +1,312 @@
+{
+	"SUBLIBRARY1_INITIATION":
+	[
+    {
+      "id" : "CBGA1.0-LIB1-HEK001",
+      "genes" : "MGAT1",
+      "deltas" : [{
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      }]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK002",
+      "genes" : "COSMC",
+      "deltas" : [{
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      }]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK003",
+      "genes" : "B4GALT5+B4GALT6",
+      "deltas" : [{
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      }]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK004",
+      "genes" : "MGAT1,COSMC",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      },
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      }
+      ]
+
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK005",
+      "genes" : "MGAT1,B4GALT5+B4GALT6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      },
+      {
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK006",
+      "genes" : "COSMC,B4GALT5+B4GALT6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      },
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK007",
+      "genes" : "MGAT1,COSMC,B4GALT5+B4GALT6",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)Man(a1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6a","y6b","y6c"]
+      },
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      },
+      {
+        "base" : "NeuAc(b2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y3a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK008",
+      "genes" : "B4GALT7",
+      "deltas" : [
+      {
+        "base" : "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser",
+        "removed" : ["y3a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK009",
+      "genes" : "POMGNT1",
+      "deltas" : [
+      {
+        "base" : "GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-O)Ser",
+        "removed" : ["y3a","y3b"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK010",
+      "genes" : "POMGNT2",
+      "deltas" : [
+      {
+        "base" : "GlcA(b1-3)Xyl(a1-3)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser",
+        "removed" : ["y3a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK011",
+      "genes" : "POMGNT1+POMGNT2",
+      "deltas" : [
+      {
+        "base" : "GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-O)Ser",
+        "removed" : ["y3a","y3b"]
+      },
+      {
+        "base" : "GlcA(b1-3)Xyl(a1-3)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser",
+        "removed" : ["y3a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK012",
+      "genes" : "COSMC+POMGNT1",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-6)]GalNAc(a1-O)Ser",
+        "removed" : ["y4a","y3b"]
+      },
+      {
+        "base" : "GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-O)Ser",
+        "removed" : ["y3a","y3b"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK013",
+      "genes" : "POMT1",
+      "deltas" : [
+      {
+        "base" : "GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-O)Ser",
+        "removed" : ["y2a"]
+      },
+      {
+        "base" : "GlcA(b1-3)Xyl(a1-3)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser",
+        "removed" : ["y2a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK014",
+      "genes" : "POMT2",
+      "deltas" : [
+      {
+        "base" : "GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-O)Ser",
+        "removed" : ["y2a"]
+      },
+      {
+        "base" : "GlcA(b1-3)Xyl(a1-3)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser",
+        "removed" : ["y2a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK015",
+      "genes" : "TMTC1+TMTC2+TMTC3+TMTC4",
+      "deltas" : [
+      {
+        "base" : "Man(a1-O)Ser",
+        "removed" : ["y2a"]
+      }
+      ]
+    }
+  	],
+	"SUBLIBRARY2_GLYCOSPHINGOLIPID_BRANCHING":
+	[
+    {
+      "id" : "CBGA1.0-LIB1-HEK016",
+      "genes" : "A4GALT",
+      "deltas" : [
+      {
+        "base" : "GalNAc(b1-3)Gal(a1-4)Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y4a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK017",
+      "genes" : "B3GNT5",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y4a"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK018",
+      "genes" : "B4GALNT1+ST3GAL5",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)[Gal(b1-3)GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer",
+        "removed" : ["y4a","y4b"]
+      }
+      ]
+    }
+	],
+	"SUBLIBRARY3_NLINKED_BRANCHING":
+	[
+    {
+      "id" : "CBGA1.0-LIB1-HEK019",
+      "genes" : "MGAT2",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y5b","y6b","y6c","y6d"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK020",
+      "genes" : "MGAT3",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y5b"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK021",
+      "genes" : "MGAT4A",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6b"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK022",
+      "genes" : "MGAT4B",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6b"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK023",
+      "genes" : "MGAT4A+MGAT4B",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6b"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK024",
+      "genes" : "MGAT5",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6d"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK025",
+      "genes" : "MGAT4A+MGAT4B+MGAT5",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y5b","y6b","y6d"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK026",
+      "genes" : "MGAT4A+MGAT4B+MGAT5,MGAT3",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y6b","y6d"]
+      }
+      ]
+    },
+    {
+      "id" : "CBGA1.0-LIB1-HEK027",
+      "genes" : "FUT8",
+      "deltas" : [
+      {
+        "base" : "NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-4)]Man(a1-3)[GlcNAc(b1-4)][NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-2)[NeuAc(a2-3)Gal(b1-3)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-N)Asn",
+        "removed" : ["y3b"]
+      }
+      ]
+    }
+	]
+}
