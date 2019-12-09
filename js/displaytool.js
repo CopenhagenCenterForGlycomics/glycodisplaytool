@@ -71,8 +71,12 @@ const data_to_series = (data,library) => {
   for (let channel = 1; channel <= channel_count; channel++ ) {
     let series = {};
     library.cells.map( cell => {
-      let val = data.filter( row => row.libraryid === cell.cellid )[0][`binding${channel}`];
-      series[cell.cellid] = val;
+      let vals = data.filter( row => row.libraryid === cell.cellid );
+      if (vals.length > 0) {
+        series[cell.cellid]= vals[0][`binding${channel}`];
+      } else {
+        series[cell.cellid] = 0;
+      }
     });
     all_series.push(series);
   }
