@@ -13,7 +13,7 @@ instructions ()
   echo "*********************************************"
 }
 
-BUCKET="glycoradar.glycomics.ku.dk"
+BUCKET="glycoradar.glyco.me"
 
 if [ $# -eq 0 ]; then
   instructions
