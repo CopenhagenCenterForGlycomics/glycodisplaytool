@@ -4,11 +4,7 @@
   "description": "Web component for mapping columns from pasted XLS",
   "module": "./js/glycodisplaytool.js",
   "scripts": {
-    "test": "node_modules/mocha-webpack/bin/mocha-webpack --webpack-config webpack.base.conf.js --ui qunit --recursive test",
-    "build-web": "./node_modules/.bin/webpack -d",
-    "build-watch-web": "./node_modules/.bin/webpack --watch",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.dev.conf.js",
-    "deploy": "rm -rf dist && ./node_modules/.bin/webpack --config webpack.prod.conf.js && ./deploy.sh prod"
+    "test": "node_modules/mocha-webpack/bin/mocha-webpack --webpack-config webpack.base.conf.js --ui qunit --recursive test"
   },
   "repository": {
     "type": "git",
@@ -17,31 +13,19 @@
   "author": "hirenj@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "d3-axis": "^1.0.12",
-    "d3-scale": "^3.1.0",
-    "d3-selection": "^1.4.0",
     "glycan.js": "github:hirenj/glycan.js",
     "sviewer": "github:hirenj/sviewer",
-    "logic-solver": "^2.0.1",
-    "minisolvers": "github:liffiton/JSMiniSolvers",
-    "pastemapper": "github:hirenj/pastemapper.js"
+    "logic-solver": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7",
     "@babel/preset-env": "",
     "babel-loader": "^8.0.5",
-    "compression-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.0.5",
     "core-js": "2",
-    "html-webpack-plugin": "^3.2.0",
     "mocha": "^6.2.1",
     "mocha-webpack": "^2.0.0-beta.0",
     "object.fromentries": "^2.0.1",
     "raw-loader": "^3.1.0",
-    "terser-webpack-plugin": "^2.2.2",
-    "vue": "^2.6.10",
-    "vue-loader": "^15.7.2",
-    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
