@@ -38,7 +38,6 @@ const icons_elements = Promise.resolve(Renderer.SYMBOLS).then( SYMBOLS_DEF => {
 })
 
 const render = (sequence,removed=[]) => {
-  Layout.LINKS = false;
   let fragment = document.createDocumentFragment();
   let canvas = document.createElement('div');
   canvas.style.opacity = 0;
@@ -50,9 +49,13 @@ const render = (sequence,removed=[]) => {
     canvas.firstChild.appendChild(defs.cloneNode(true));
   });
 
-  let renderer = new Renderer(canvas,Layout);
   let sug = new IupacSugar();
   sug.sequence = sequence;
+
+  Layout.LINKS = false;
+  LinkageLayoutFishEye.LINKS = false;
+
+  let renderer = new Renderer(canvas, [...sug.composition()].length > 2 ? Layout : LinkageLayoutFishEye );
   renderer.addSugar(sug);
   return renderer.refresh().then( () => {
   }).then( () => {
